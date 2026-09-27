@@ -35,14 +35,14 @@ A worked example, from a six point UV-Vis calibration series at 0, 5, 10, 15, 20
   line to find the unknown's concentration. The fit gave a slope of 0.0571 AU/µM and
   R² = 0.997.
 - **What I did:** changed it. I refit using the five standards from 0 to 20 µM.
-- **Why, from my data:** the residuals are not random. They rise from -0.017 to +0.035 AU
-  across the first five standards and then drop to -0.045 AU at 25 µM, whose absorbance of
-  1.40 AU is the only one above 1.2 AU. Refit without it, the other five fall on a line
-  (R² = 0.99998) that the 25 µM point misses by 0.094 AU, which is the flattening of the
-  response at high absorbance rather than scatter. The slope rises 4.7%, to 0.0597 AU/µM.
+- **Why, from my data:** the residuals are not random. They rise from -0.016 to +0.032 AU
+  across the first five standards and then drop to -0.041 AU at 25 µM, whose absorbance of
+  1.405 AU is the only one above 1.2 AU. Refit without it, the other five fall on a line
+  (R² = 0.99998) that the 25 µM point misses by 0.087 AU, which is the flattening of the
+  response at high absorbance rather than scatter. The slope rises 4.3%, to 0.0596 AU/µM.
 ```
 
-The R² of 0.997 is what made the first fit look fine. Note that "verified" is a full entry too, as long as it names what you checked, for example "I recomputed the slope by hand from the 0 and 20 µM standards and got 0.0597 AU/µM". "I checked the output and it looked right" is not an entry.
+The R² of 0.997 is what made the first fit look fine. Note that "verified" is a full entry too, as long as it names what you checked, for example "I recomputed the slope by hand from the 0 and 20 µM standards and got 0.0595 AU/µM". "I checked the output and it looked right" is not an entry.
 
 These are the entries that the final project's collaboration log collects, so by the first project milestone in November you will have written a dozen of them.
 
