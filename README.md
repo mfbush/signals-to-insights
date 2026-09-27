@@ -48,11 +48,12 @@ The dates on this page, the topics of sessions 1 to 3 and the grading weights ar
 | 5 | Thu Oct 15 | Tidy data and the sample table |
 | 6 | Tue Oct 20 | Batch file handling and automated reporting |
 | 7 | Thu Oct 22 | Visualization for chemical measurements |
-| none | Sun Oct 25 | Project topic declaration due |
 | 8 | Tue Oct 27 | Noise in chemical measurements |
 | 9 | Thu Oct 29 | Experimental design and statistical inference |
+| none | Sun Nov 1 | CHEM 427 project preferences due |
 | 10 | Tue Nov 3 | Fourier analysis |
 | 11 | Thu Nov 5 | Filtering, smoothing, baseline correction |
+| none | Sun Nov 8 | Project topic declaration due |
 | 12 | Tue Nov 10 | Peak detection and feature extraction |
 | 13 | Thu Nov 12 | Curve fitting |
 | 14 | Tue Nov 17 | Uncertainty and model selection |
@@ -81,7 +82,7 @@ Your grade has two parts: the weekly activities, 60%, and the final project, 40%
 | Component | Weight |
 |---|---|
 | Weekly activities, lowest two dropped | 60% |
-| Project topic declaration, Sun Oct 25 | 5% |
+| Project topic declaration, Sun Nov 8 | 5% |
 | Project working draft with judgment log, Sun Nov 22 | 10% |
 | Oral check-in, session 16 | 10% |
 | Final notebook, one page visual summary and log, Wed Dec 9 | 15% |
@@ -113,13 +114,13 @@ Absences are reported under the Department of Chemistry's [student absence polic
 
 You choose a chemical question and answer it with the methods of the course, on a real dataset. The project has three submitted milestones, one oral check-in and a presentation. Each of you has a project mentor from the instructional team, who reviews your topic, scores your draft and holds your check-in.
 
-1. **Topic declaration, Sunday, October 25.** CHEM 427: the project you chose from the list, and confirmation that you can load its data. CHEM 527: a one page proposal with the question, the data source with a link or citation, and an assessment of whether the data are sufficient.
+1. **Topic declaration, Sunday, November 8.** CHEM 427: the project you were assigned from the list, after ranking three by November 1, and confirmation that you can load its data. CHEM 527: a one page proposal with the question, the data source with a link or citation, and an assessment of whether the data are sufficient. If you plan to propose your own project, talk it through in office hours first.
 2. **Working draft with judgment log, Sunday, November 22.** A notebook that loads and explores your data and makes a first analysis, plus your judgment log, which collects the judgment entries you have written about your project's data, at least two by this date.
 3. **Oral check-in, session 16.** A seven minute conversation with your mentor, with your notebook open. You explain choices you made in your own notebook. The question bank is on the project page, so preparing means studying your own reasoning. A low score earns a second check-in in session 19.
 4. **Final submission, Wednesday, December 9.** The complete notebook, which runs from a clean start; a one page visual summary; and the judgment log with a short paragraph on how you used AI in the project.
 5. **Gallery presentation, Thursday, December 10.** You present your visual summary at a station and review two classmates' projects. The presentation is required and is not scored separately.
 
-The [project page](final-project.md) has the full description, the rubrics and the oral check-in questions. The CHEM 427 project list is added to it by October 15.
+The [project page](final-project.md) has the full description, the rubrics and the oral check-in questions. The [CHEM 427 project list](project-list.md) is published by October 15.
 
 ### From percentage to grade
 
