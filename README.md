@@ -58,11 +58,11 @@ The dates on this page, the topics of sessions 1 to 3 and the grading weights ar
 | 14 | Tue Nov 17 | Uncertainty and model selection |
 | 15 | Thu Nov 19 | Principal component analysis |
 | none | Sun Nov 22 | Project working draft and judgment log due |
-| 16 | Tue Nov 24 | Project work session 1, with oral check-ins in the third hour |
+| 16 | Tue Nov 24 | Project work session 1, with oral check-ins |
 | none | Thu Nov 26 | Thanksgiving, no class |
 | 17 | Tue Dec 1 | Calibration and multivariate models |
 | 18 | Thu Dec 3 | Predictive models and their evaluation |
-| 19 | Tue Dec 8 | Project work session 2, opening on responsible data science, with oral check-ins in the third hour |
+| 19 | Tue Dec 8 | Project work session 2, opening on responsible data science, with second and makeup check-ins |
 | none | Wed Dec 9 | Final notebook, visual summary and log due |
 | 20 | Thu Dec 10 | Project presentations in a gallery format |
 
@@ -83,7 +83,7 @@ Your grade has two parts: the weekly activities, 60%, and the final project, 40%
 | Weekly activities, lowest two dropped | 60% |
 | Project topic declaration, Sun Oct 25 | 5% |
 | Project working draft with judgment log, Sun Nov 22 | 10% |
-| Oral check-in, in the third hour of session 16 or 19 | 10% |
+| Oral check-in, session 16 | 10% |
 | Final notebook, one page visual summary and log, Wed Dec 9 | 15% |
 
 The weights will not change. The rubric wording for the activities and the project may be refined before each part is first graded, and any change is posted on Canvas before that assignment is released.
@@ -105,21 +105,21 @@ One teaching assistant grades each session: Lucas the odd sessions, Chris the ev
 
 Each activity is due on Canvas before the start of the next session, at 1:30 pm: a Tuesday activity on Thursday, a Thursday activity on the following Tuesday. The session 15 activity is due at the start of session 16, on Tuesday, November 24. A late activity scores 0 and becomes one of your two drops. The session 1 worksheet is the one exception: it is due Friday, October 2, at 11:59 pm and earns full credit until Wednesday, October 7, at 11:59 pm.
 
-Project milestones are due at 11:59 pm on the dates above.
+Project milestones are due at 11:59 pm on the dates above. You have one 48 hour grace period across the three submitted milestones, and after it a milestone loses 10% of its points a day for up to three days; the [project page](final-project.md) gives the details.
 
 Absences are reported under the Department of Chemistry's [student absence policy](https://chem.washington.edu/student-absences). An excused absence does not add points, so the two drops are how a missed activity is absorbed. If you expect to miss more than a week, contact Matt as early as you can so that we can plan the rest of the quarter.
 
 ### Final project
 
-You choose a chemical question and answer it with the methods of the course, on a real dataset. The project has three submitted milestones, one oral check-in and a presentation.
+You choose a chemical question and answer it with the methods of the course, on a real dataset. The project has three submitted milestones, one oral check-in and a presentation. Each of you has a project mentor from the instructional team, who reviews your topic, scores your draft and holds your check-in.
 
 1. **Topic declaration, Sunday, October 25.** CHEM 427: the project you chose from the list, and confirmation that you can load its data. CHEM 527: a one page proposal with the question, the data source with a link or citation, and an assessment of whether the data are sufficient.
-2. **Working draft with judgment log, Sunday, November 22.** A notebook that loads and explores your data and makes a first analysis, plus your judgment log, which collects the judgment entries you have written for the project.
-3. **Oral check-in, session 16 or 19.** A seven minute conversation with a member of the instructional team, with your notebook open. You explain choices you made in your own notebook. The question bank is published with the working draft assignment, so preparing means studying your own reasoning.
+2. **Working draft with judgment log, Sunday, November 22.** A notebook that loads and explores your data and makes a first analysis, plus your judgment log, which collects the judgment entries you have written about your project's data, at least two by this date.
+3. **Oral check-in, session 16.** A seven minute conversation with your mentor, with your notebook open. You explain choices you made in your own notebook. The question bank is on the project page, so preparing means studying your own reasoning. A low score earns a second check-in in session 19.
 4. **Final submission, Wednesday, December 9.** The complete notebook, which runs from a clean start; a one page visual summary; and the judgment log with a short paragraph on how you used AI in the project.
 5. **Gallery presentation, Thursday, December 10.** You present your visual summary at a station and review two classmates' projects. The presentation is required and is not scored separately.
 
-The full project description and rubric will be posted in this repository by October 15.
+The [project page](final-project.md) has the full description, the rubrics and the oral check-in questions. The CHEM 427 project list is added to it by October 15.
 
 ### From percentage to grade
 

@@ -44,7 +44,7 @@ A worked example, from a six point UV-Vis calibration series at 0, 5, 10, 15, 20
 
 The R² of 0.997 is what made the first fit look fine. Note that "verified" is a full entry too, as long as it names what you checked, for example "I recomputed the slope by hand from the 0 and 20 µM standards and got 0.0595 AU/µM". "I checked the output and it looked right" is not an entry.
 
-These are the entries that the final project's collaboration log collects, so by the first project milestone in November you will have written a dozen of them.
+The final project's judgment log uses the same format for entries about your project's data. By the working draft in November you will have written a dozen in the activities.
 
 ## Privacy and usage limits
 
