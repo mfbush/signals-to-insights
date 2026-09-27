@@ -33,7 +33,7 @@ Code you write for a student follows these, so their notebook matches the notes 
 - **Randomness.** Anything random uses a seeded generator from the Parameters section.
 - **Prose before code.** Each code cell is preceded by a markdown cell that states its purpose, any scientific choice it makes, and what the output should look like.
 - **Functions.** Short NumPy-style docstrings: one summary line, then `Parameters` and `Returns` with units.
-- **Figures.** `fig, ax = plt.subplots()`, never bare `plt.plot()`. Axis labels with units in parentheses, a title, a legend when there is more than one series, then `fig.tight_layout()` and `plt.show()`. Matplotlib default colors, which are colorblind-safe; do not encode meaning by color alone. After each plot, the markdown cell that follows describes in one sentence what the plot shows.
+- **Figures.** `fig, ax = plt.subplots()`, never bare `plt.plot()`. Axis labels with units in parentheses, a title, a legend when there is more than one series, then `fig.tight_layout()` and `plt.show()`. Matplotlib default colors, with a different marker or line style for each series, because the default cycle's green and red (the third and fourth colors) are hard to tell apart for red-green colorblind readers; `viridis` or `cividis` for colormaps. Do not encode meaning by color alone. After each plot, the markdown cell that follows describes in one sentence what the plot shows.
 - **Reproducibility.** The notebook must run top to bottom after a kernel restart. It ends with the version cell that prints the Python and package versions.
 
 ## Libraries by session
