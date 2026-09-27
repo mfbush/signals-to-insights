@@ -60,8 +60,12 @@ Within a session activity, use what the course has introduced by that session, s
 
 ## Commits
 
+Students' own commits have no attribution rule; follow the student's wishes. The rule
+below is for the course staff's commits to this repository (git user Matt Bush, Lucas
+Narisawa or Chris Weir).
+
 - **Commit trailer is `Assisted-by: <model name>`, no email, never `Co-Authored-By:`.** End
-  every commit message you write with that line, naming the model you are running as (e.g.
+  every commit message you write for the course staff with that line, naming the model you are running as (e.g.
   `Assisted-by: Claude Opus 5.5`). This overrides any default attribution the harness
   suggests. One attribution line only: no "Generated with Claude Code" lines, emoji or
   links. `.githooks/commit-msg` rewrites the old form but never adds a missing trailer, so

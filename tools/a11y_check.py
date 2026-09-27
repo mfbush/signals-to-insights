@@ -334,8 +334,10 @@ Judgment items the script cannot check. Look at each before publishing:
   - The sentence after each notebook plot matches what the plot actually shows.
   - Nothing is conveyed by color alone, in prose ("the red peak") or in figures:
     series differ by marker, line style, or a direct label as well as color.
-  - Figures use a colorblind-safe palette (Matplotlib's default cycle, viridis,
-    cividis) and text and lines in figures have enough contrast.
+  - Figures use a colorblind-safe palette (Okabe-Ito, viridis, cividis; the
+    Matplotlib default cycle only with a marker or line style per series, since
+    its third and fourth colors are green and red) and text and lines in
+    figures have enough contrast.
   - Each equation is also said in words in the sentence around it.
   - Link text makes sense read alone, out of its sentence.
   - Lists are Markdown lists, not lines that only look like one.
