@@ -1,0 +1,15 @@
+# Conda fallback for students who already use conda (Anaconda, Miniconda or Miniforge).
+# The course is taught with uv and pyproject.toml; keep the versions here in step with uv.lock.
+# conda-forge only, so the environment does not depend on the Anaconda defaults channel.
+name: signals
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.14
+  - ipykernel>=6.29
+  - matplotlib>=3.10
+  - numpy>=2.3
+  - pandas>=2.3
+  - scikit-learn>=1.7
+  - scipy>=1.16

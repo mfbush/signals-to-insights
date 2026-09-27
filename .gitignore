@@ -1,0 +1,9 @@
+# Python environment built by `uv sync`
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
