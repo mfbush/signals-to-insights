@@ -132,7 +132,7 @@ The rules are set out on the [AI practices page](ai-practices.md). In brief:
 - You own every cell. If you cannot explain a cell in the oral check-in, it should not be in your notebook.
 - Ask the assistant to explain before you ask it to write.
 - Check its answers against your data: units, magnitudes, the plot.
-- Write the judgment cell yourself. The assistant in this repository is told to leave it empty, and having it or any other tool write the cell is academic misconduct in this course.
+- Write the judgment cell, and the project's judgment log, yourself. You may ask the assistant about the chemistry or statistics before you write. Having it or any other tool generate, rewrite, translate or polish their text is academic misconduct in this course; the spell check in your editor is fine.
 - Do not paste other people's unpublished data, including your research group's, into any AI tool.
 
 Other AI tools are allowed under the same rules. The instructional team supports only Claude Code in VS Code.
@@ -166,10 +166,10 @@ Washington state law requires that UW develop a policy for accommodation of stud
 The University takes academic integrity very seriously. Behaving with integrity is part of our responsibility to our shared learning community. If you are uncertain about whether something is academic misconduct, ask me. In this course:
 
 - **Allowed:** discussing activities with classmates, working at the same table, getting help from the instructional team, and using AI tools as described above. Setup pairs in sessions 2 and 3 submit one notebook with both names.
-- **Not allowed:** submitting another student's notebook or judgment cell as your own, having anyone or any tool write your judgment cell or your judgment log, and presenting code, data or figures from other sources without credit.
+- **Not allowed:** submitting another student's notebook or judgment cell as your own, having anyone or any AI tool generate, rewrite, translate or polish the text of your judgment cell, your judgment log or your paragraph on how you used AI, and presenting code, data or figures from other sources without credit.
 - **Cite code you adapt.** Code taken from a website, a paper, documentation or a classmate is cited in a comment in the cell that uses it. Code from the AI assistant needs no citation, because the assistant is expected in every activity; your judgment entries and the project's paragraph on how you used AI are the record of that use.
 
-The University's [academic misconduct information for students](https://www.washington.edu/cssc/academic-misconduct/) describes how suspected misconduct is handled.
+The University's [academic misconduct information for students](https://www.washington.edu/cssc/academic-misconduct/) describes how suspected misconduct is handled. In this course, when a grader suspects a violation, I first talk with you about your notebook. A case that conversation does not resolve is reported to Community Standards and Student Conduct.
 
 ### Inclusivity and respect
 
