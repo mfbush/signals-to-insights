@@ -1,0 +1,18 @@
+#!/bin/sh
+# commit-msg -- enforce this project's attribution trailer.
+#
+# Convention: `Assisted-by: <name>`, hyphenated so git parses it as a real
+# trailer, and with NO email address. It replaces the default
+# `Co-Authored-By: <name> <noreply@anthropic.com>`.
+#
+# Rewrites rather than rejects, so a habitual old-form trailer costs nobody a
+# retry. Idempotent: a message already in the correct form passes unchanged.
+#
+# Requires `git config core.hooksPath .githooks`, which is per-clone and not
+# tracked. A fresh clone must run it once.
+msg="$1"
+tmp="$msg.trailer-tmp"
+sed -e 's/^Co-Authored-By: \(.*\) <[^>]*>[[:space:]]*$/Assisted-by: \1/I' \
+    -e 's/^Co-Authored-By:[[:space:]]*\(.*\)$/Assisted-by: \1/I' \
+    -e 's/^Assisted[ -][Bb]y:[[:space:]]*/Assisted-by: /' \
+    "$msg" > "$tmp" && mv "$tmp" "$msg"

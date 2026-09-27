@@ -9,3 +9,10 @@ added one at a time as they are ready, starting before the first class on Thursd
 October 1. Once you have cloned the repository, `git pull` brings in each new session.
 
 The full syllabus replaces this page before the first class.
+
+## Contributing
+
+For the instructional team. Run `git config core.hooksPath .githooks` once in your clone. It
+turns on a hook that rewrites `Co-Authored-By: Claude ... <email>` trailers to
+`Assisted-by: Claude <model>`, with no email. A commit made with Claude's help ends with
+that one line. A commit made without it carries none.
