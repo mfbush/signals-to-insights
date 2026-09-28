@@ -7,3 +7,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Session 4: NIST records each student downloads into data/ (the WebBook names them <CAS>-IR.jdx)
+sessions/S04-chemical-data-formats/data/*-IR.jdx
