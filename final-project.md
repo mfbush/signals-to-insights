@@ -12,7 +12,7 @@ The six-standard calibration from session 1 is a project in miniature. It has a 
 | Final submission | Wednesday, December 9, 11:59 pm | 15% | The finished notebook, a one page visual summary and your judgment log |
 | Gallery presentation | Thursday, December 10, in session 20 | required, not scored | Your visual summary at a station, and reviews of two classmates' projects |
 
-Each of you has a project mentor from the instructional team, named on Canvas by October 20. Matt mentors CHEM 527 students; Lucas and Chris mentor CHEM 427 students, split by last name as for setup help. Your mentor reviews your topic, scores your working draft, holds your oral check-in and scores your final submission first. Matt reads every final submission and sets its score.
+Each of you has a project mentor from the instructional team, named on Canvas by October 20. Lucas and Chris are the mentors for both sections, and students are split between them by last name, as for setup help. Your mentor reviews your topic, scores your working draft, holds your oral check-in and scores your final submission first. Matt reads every final submission and sets its score.
 
 ## CHEM 427 and CHEM 527
 
@@ -85,7 +85,7 @@ Your mentor reads the draft before the oral check-in and chooses the check-in qu
 
 ## 3. Oral check-in
 
-The check-ins run through session 16 on Tuesday, November 24, in the order posted on Canvas; the rest of the session is project work. You spend seven minutes with your mentor, your notebook and log open on your laptop. There are no slides, and nothing to prepare except your own reasoning. Your mentor asks three or four questions from the bank below, chosen from your notebook, and follows up on your answers.
+Session 16, on Tuesday, November 24, has no opening: the check-ins start at 1:30 pm and run through the session, including its office hour, in the order posted on Canvas; the rest of the session is project work, and Matt sits in on some check-ins. You spend seven minutes with your mentor, your notebook and log open on your laptop. There are no slides, and nothing to prepare except your own reasoning. Your mentor asks three or four questions from the bank below, chosen from your notebook, and follows up on your answers.
 
 The check-in is scored on four dimensions at 0 to 5 each, 0 to 20 in all: Data, Method, Result and Judgment, matching the four groups of questions. A 5 needs an answer to a follow-up question you could not have prepared for.
 
@@ -98,7 +98,7 @@ The check-in is scored on four dimensions at 0 to 5 each, 0 to 20 in all: Data, 
 | 1 | Vague or partly wrong, or the reason given is that the assistant suggested it |
 | 0 | No answer, or an answer your notebook contradicts |
 
-A total of 9 or below earns a second check-in in session 19, on Tuesday, December 8, with a different member of the instructional team. The higher of the two scores counts, up to 14. If you cannot attend session 16, tell your mentor before 1:30 pm that day and you are checked in during session 19 with no cap. A check-in missed without notice scores 0, unless you give a documented reason within 24 hours.
+A total of 9 or below earns a second check-in in session 19, on Tuesday, December 8, with Matt. The higher of the two scores counts, up to 14. If you cannot attend session 16, tell your mentor before 1:30 pm that day and you are checked in during session 19 with no cap. A check-in missed without notice scores 0, unless you give a documented reason within 24 hours.
 
 ### Question bank
 
