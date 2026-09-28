@@ -6,7 +6,7 @@ Two folders of spectra: `flarelab/`, real ferrocyanide spectra for section 1, an
 
 ### Source
 
-P. Rimmer, "Supplementary data for "Measuring Nitroprussside and Ferrocyanide with Quantitative UV-Vis using FlareLab"", Harvard Dataverse, version 1, 2025, [doi:10.7910/DVN/QAZ9B6](https://doi.org/10.7910/DVN/QAZ9B6), released under CC0 1.0, accessed 2026-09-28. The title's spelling is the record's. The data belong to the preprint L. Rossmanith, S. K. Platymesi, S. J. Thompson and P. B. Rimmer, "Measuring Nitroprussside and Ferrocyanide with Quantitative UV-Vis using FlareLab", ChemRxiv, 2025, [doi:10.26434/chemrxiv-2025-d3ltb](https://doi.org/10.26434/chemrxiv-2025-d3ltb), which reports the molar attenuation coefficient of ferrocyanide at 340 nm as (2.2 ± 0.4) × 10^3 dm^2/mol, i.e., 220 L/mol/cm. The record holds 392 files for ferrocyanide, nitroprusside and their mixtures; this folder is three of them, from `Supplementary Data/Raw Data/Ferrocyanide/`, copied byte for byte:
+P. Rimmer, "Supplementary data for 'Measuring Nitroprussside and Ferrocyanide with Quantitative UV-Vis using FlareLab'", Harvard Dataverse, version 1, 2025, [doi:10.7910/DVN/QAZ9B6](https://doi.org/10.7910/DVN/QAZ9B6), released under CC0 1.0, accessed 2026-09-28. The title's spelling is the record's. The data belong to the preprint L. Rossmanith, S. K. Platymesi, S. J. Thompson and P. B. Rimmer, "Measuring Nitroprussside and Ferrocyanide with Quantitative UV-Vis using FlareLab", ChemRxiv, 2025, [doi:10.26434/chemrxiv-2025-d3ltb](https://doi.org/10.26434/chemrxiv-2025-d3ltb), which reports the molar attenuation coefficient of ferrocyanide at 340 nm as (2.2 ± 0.4) × 10^3 dm^2/mol, i.e., 220 L/mol/cm. The activity uses 360 nm instead, because at 340 nm these standards stop rising above 5 mM; over 0.5 to 5 mM the 340 nm slope, 0.197 AU per mM at 1 cm, agrees with the preprint's value. The record holds 392 files for ferrocyanide, nitroprusside and their mixtures; this folder is 79 of them, from `Supplementary Data/Raw Data/Ferrocyanide/`, copied byte for byte:
 
 - `Ferrocyanide Standard 240409/`, 39 spectra measured on April 9, 2024
 - `Ferrocyanide Standard 240410/`, 39 spectra measured on April 10, 2024
@@ -26,7 +26,7 @@ The file name carries the facts, separated by underscores: `LE_240409_d_50_mm_fe
 
 ### The parameter table
 
-One row per file: `dateID` (yymmdd), `Version ID`, `Distance Setting` (mm), `Experiment type`, `standard type`, `Filename`, and `concentration (M)`, the standard's concentration in mol/L, `NA` for the dark and reference. The eleven standards are 0.000001, 0.000005, 0.00001, 0.00005, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05 and 0.1 M. The concentration is in the table only, not in the file name.
+One row per file: `dateID` (yymmdd), `Version ID`, `Distance Setting` (mm), `Experiment type`, `standard type`, `Filename`, and `concentration (M)`, the standard's concentration in mol/L, `NA` for the dark and reference on the two days here (the table's rows for 240206 and 240207 carry 0 there instead). The eleven standards are 0.000001, 0.000005, 0.00001, 0.00005, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05 and 0.1 M. The concentration is in the table only, not in the file name.
 
 ## `runs/`: iron in water, one run per student
 
@@ -34,6 +34,6 @@ Simulated by the generator `make_iron_runs.py`, which the instructors keep, with
 
 - `standards/std_0p00.csv` to `standards/std_4p00.csv`: the reagent blank and six standards at 0.10, 0.25, 0.50, 1.00, 2.00 and 4.00 mg/L, the level written with `p` for the decimal point
 - `samples/<water>_rep<k>.csv`: three waters, each in triplicate, drawn from tap, spring, river, cistern and well; the names differ between runs
-- `sequence.csv`: the instrument's sequence table, one row per measurement in the order it was made
+- `sequence.csv`: the instrument's sequence table, one row per sample position in the order of the sequence, with a re-measurement in the position of the measurement it replaces
 
-A spectrum is a CSV with the columns `wavelength_nm`, 400 to 700 nm at 1 nm, and `absorbance_AU`, blanked by the instrument. The sequence table has the columns `position`, `file` (the path below the run folder, for example `samples/tap_rep1.csv`), `kind` (`standard` or `sample`), `level_mg_L` (standards only), `sample` and `replicate` (samples only), `instrument` (`UV-1` or `UV-2`) and `note`.
+A spectrum from UV-1 is a CSV with the columns `wavelength_nm`, 400 to 700 nm at 1 nm, and `absorbance_AU`, blanked on the reagent blank. In every run one sample replicate was re-measured on a second instrument, UV-2, after a lamp fault on UV-1; its export has the same two columns below a header of six lines, and UV-2 was blanked on deionized water. The sequence table has the columns `position`, `file` (the path below the run folder, for example `samples/tap_rep1.csv`), `kind` (`standard` or `sample`), `level_mg_L` (standards only), `sample` and `replicate` (samples only), `instrument` (`UV-1` or `UV-2`) and `note`.

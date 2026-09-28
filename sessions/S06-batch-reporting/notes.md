@@ -9,7 +9,7 @@ By the end of this session you can:
 1. Build a file inventory with `pathlib`, one row per file with the facts its folder and file name carry, and check its count against the laboratory's own list before any file is read.
 2. Write one function that reads a spectrum and returns the value at the analytical wavelength, and apply it to every file in a loop that collects a list of dictionaries into one table.
 3. Log each file the loop cannot read, with its name and error, and show that the rows read plus the files logged equal the inventory.
-4. Write a summary table and a short report with f-strings from the same run, with the data folder as the only input a new run changes.
+4. Choose whether a file that needed a different reader goes into the result, from the concentration, standard deviation and n under both, and write the summary table and report from the same run, with the run as the only input a new run changes.
 
 ## 1. An experiment is a folder
 
@@ -29,7 +29,7 @@ Write the reading once, as a function, and call it on every file. A Flame export
 
 Absorbance needs three spectra from the same day and setting: A = -log10((S - D) / (R - D)), i.e., minus the base 10 logarithm of the standard's counts over the water reference's counts, each with the dark counts D subtracted. A `merge` on day and distance setting attaches the matching dark and reference counts to each of the 66 standards.
 
-The worked calculation. At 360 nm, the 12 day 1 standards from 0.5 to 10 mM give a slope m = 0.09168 AU per mM, an intercept b = 0.00877 AU and R^2 = 0.99926. Below 0.5 mM the absorbance is within 0.01 AU of zero, and at 50 and 100 mM it stops near 1.8 AU, so those standards are outside the calibration. Day 2's 1 mM standard at 50 mm reads A = 0.0963 AU. Its concentration is c = (A - b) / m, i.e., its absorbance less the intercept, divided by the slope: (0.0963 - 0.00877) / 0.09168 = 0.955 mM, a recovery of 95.5% of the 1 mM the laboratory made up. Over the three settings the day 2 standards recover at 94.5% for 1 mM, 112.8% for 5 mM, 109.0% for 10 mM, and 161.1% for 0.5 mM, the one level that fails, at every setting. The count arithmetic behind that table: 78 files found, 78 in the parameter table, 78 read, 0 not read.
+The worked calculation. At 360 nm, the 12 day 1 standards from 0.5 to 10 mM give a slope m = 0.09168 AU per mM, an intercept b = 0.00877 AU and R^2 = 0.99926. Below 0.5 mM the absorbance is within 0.01 AU of zero, and at 50 and 100 mM it stops near 1.8 AU, so those standards are outside the calibration. Day 2's 1 mM standard at 50 mm reads A = 0.0963 AU. Its concentration is c = (A - b) / m, i.e., its absorbance less the intercept, divided by the slope: (0.0963 - 0.00877) / 0.09168 = 0.955 mM, a recovery of 95.5% of the 1 mM the laboratory made up. Over the three settings the day 2 standards recover at 94.5% for 1 mM, 112.8% for 5 mM, 109.0% for 10 mM, and 161.1% for 0.5 mM, the one level outside 85 to 115%, at every setting. The count arithmetic behind those recoveries: 78 files found, 78 in the parameter table, 78 read, 0 not read.
 
 ## 4. A silent gap is worse than a crash
 
@@ -38,21 +38,20 @@ In your run for section 2, one file will not read. A plain loop stops at it with
 ```python
 for path in run_paths:
     try:
+        name = f"{path.parent.name}/{path.name}"
         run_rows.append({"file": name, "absorbance_AU": absorbance_at(path, IRON_NM)})
     except Exception as err:
         ...   # what the run keeps about this file
 ```
 
-What goes in the `except` block is the decision. `continue` or `pass` keeps nothing: the loop finishes, the table has one row fewer, and every number after it is computed on the files that happened to read, with nothing to say that one is missing. Appending `{"file": name, "error": str(err)}` to a list of failures keeps the evidence, and the report can print it. Either way the loop finishes, so the check is not whether it ran but whether it accounted for everything: the rows read plus the files logged must equal the count in the sequence table. With 16 files in a run and one that will not read, that is 15 + 1 = 16. With `continue` it is 15 + 0, and the one missing file shows only in that sum.
-
-Although an assistant asked to make a loop keep going will write the `except` block in one line, the line it writes decides whether your report can be checked, so read it against the reconciliation before you keep it.
+What goes in the `except` block is the decision. `continue` or `pass` keeps nothing: the loop finishes, the table has one row fewer, and every number after it is computed on the files that happened to read, with nothing to say that one is missing. Appending `{"file": name, "error": str(err)}` to a list of failures keeps the evidence, and the report can print it. Either way the loop finishes, so the check is not whether it ran but whether it accounted for everything: the rows read plus the files logged must equal the count in the sequence table. With 16 files in a run and one that will not read, that is 15 + 1 = 16. With `continue` it is 15 + 0, and in the counts the one missing file shows only in that sum.
 
 ## 5. The report and the one input
 
-The last cells write two files to `output/`: the summary table with `to_csv`, and a short report built line by line with f-strings and written with `write_text`. `OUTPUT_DIR.mkdir(exist_ok=True)` makes the folder if it is missing. Both files are overwritten on every run, and the repository ignores `output/`, so `git pull` never meets your report. Every value in the report comes from a variable, including the file counts on its first line, so pointing `DATA_DIR` at another pair of days, or `RUN` at another run, writes that run's report with no other change.
+The last cells write two files to `output/`: the summary table with `to_csv`, and a short report built line by line with f-strings and written with `write_text`. `OUTPUT_DIR.mkdir(exist_ok=True)` makes the folder if it is missing. Both files are overwritten on every run, and the repository ignores `output/`, so `git pull` never meets your report. Every value in the report comes from a variable, including the file counts on its first line, so setting `RUN` to another run writes that run's report with no other change.
 
 ## 6. Today
 
-You have one run, assigned on the board; set `RUN` in Parameters, and nothing is downloaded. Section 2 builds your run's inventory and counts it against its sequence table (TASK 1), fills the one line in the loop's `except` block (TASK 2), and reconciles the rows read and the files logged against the sequence table (TASK 3). One prompt to the assistant, before TASK 2, is where part (b) of the judgment cell comes from. Section 3 reads the file that did not read and gives two treatments of it, and TASK 4 chooses which one goes into your report.
+You have one run, assigned on the board; set `RUN` in Parameters, and nothing is downloaded. Section 2 builds your run's inventory and counts it against its sequence table (TASK 1), replaces the `raise` line in the loop's `except` block (TASK 2), and reconciles the rows read and the files logged against the sequence table (TASK 3). One prompt to the assistant, before TASK 2, is where part (b) of the judgment cell comes from. Section 3 reads the file that did not read and gives two treatments of it, each compared with the EPA's 0.3 mg/L secondary standard for iron, and TASK 4 chooses which one goes into your report.
 
-The judgment cell is scored 0 to 2 by the rubric in the syllabus, in the format on the AI practices page. Part (a) asks which treatment your report uses and why, with the affected water's concentration, standard deviation and n under both, and what the summary and the report would have said had the `except` block kept nothing. Part (b) is one entry with a reason from your run. To submit, click **Restart**, then **Run All**, save, and upload `activity.ipynb` to Canvas by 1:30 pm on Thursday, October 22. A loop that finishes has only proved that it finished; the count proves that it read everything.
+The judgment cell is scored 0 to 2 by the rubric in the syllabus, in the format on the AI practices page. Part (a) asks which treatment your report uses and why, with the affected water's concentration, standard deviation and n under both and whether either changes its comparison with 0.3 mg/L, and what the summary and the report would have said had the `except` block kept nothing. Part (b) is one entry with a reason from your run. To submit, click **Restart**, then **Run All**, save, and upload `activity.ipynb` to Canvas by 1:30 pm on Thursday, October 22. A loop that finishes has only proved that it finished; the count proves that it read everything.
