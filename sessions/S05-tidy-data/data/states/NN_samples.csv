@@ -1,0 +1,40 @@
+pwsid,system_name,size_category,facility_id,facility_water_type,sample_point_id,epa_region,state
+NN0400174,Chinle-Many Farms-Del Muerto NTUA,S,10001,GW,EP001,9,NN
+NN0400206,Tuba City NTUA,S,10001,GW,EP001,9,NN
+NN0400289,Ganado Public Schools,S,EP001,GW,EP001,9,NN
+NN0400289,Ganado Public Schools,S,EP002,GW,EP002,9,NN
+NN0400342,Dilkon-Indian Wells-Greasewood-White Cone NTUA,S,17T583,GW,EP001,9,NN
+NN0400342,Dilkon-Indian Wells-Greasewood-White Cone NTUA,S,17T584,GW,EP002,9,NN
+NN0400342,Dilkon-Indian Wells-Greasewood-White Cone NTUA,S,17T585,GW,EP003,9,NN
+NN0403000,Fort Defiance-Window Rock-St Michaels NTUA,L,00004,GW,NN0403000004,9,NN
+NN0403000,Fort Defiance-Window Rock-St Michaels NTUA,L,00001,GW,NN040300001,9,NN
+NN0403000,Fort Defiance-Window Rock-St Michaels NTUA,L,00011,GW,NN0403000011,9,NN
+NN0403000,Fort Defiance-Window Rock-St Michaels NTUA,L,00003,GW,NN040300003,9,NN
+NN0403000,Fort Defiance-Window Rock-St Michaels NTUA,L,00005,GW,NN040300005,9,NN
+NN0403000,Fort Defiance-Window Rock-St Michaels NTUA,L,00006,GW,NN040300006,9,NN
+NN0403000,Fort Defiance-Window Rock-St Michaels NTUA,L,00009,GW,PUMPHOUSE,9,NN
+NN0403001,Ganado-Burnside-Cornfield-Steamboat NTUA,S,17K348,GW,EP001,9,NN
+NN0403001,Ganado-Burnside-Cornfield-Steamboat NTUA,S,17T586,GW,EP002,9,NN
+NN0403001,Ganado-Burnside-Cornfield-Steamboat NTUA,S,17T566,GW,EP003,9,NN
+NN0403003,Kayenta NTUA,S,8SS450,GW,EP001,9,NN
+NN0403003,Kayenta NTUA,S,8PH517,GW,EP002,9,NN
+NN0403003,Kayenta NTUA,S,08T544,GW,EP003,9,NN
+NN0403003,Kayenta NTUA,S,08T551,GW,EP004,9,NN
+NN0403003,Kayenta NTUA,S,08T522,GW,EP005,9,NN
+NN0403003,Kayenta NTUA,S,08T550,GW,EP006,9,NN
+NN0403003,Kayenta NTUA,S,10001,GW,EP007,9,NN
+NN0403004,Pinon-District 4 NTUA,S,04T522,GW,EP001,9,NN
+NN0403004,Pinon-District 4 NTUA,S,40579,GW,EP002,9,NN
+NN0403004,Pinon-District 4 NTUA,S,40578,GW,EP003,9,NN
+NN0403004,Pinon-District 4 NTUA,S,40582,GW,EP004,9,NN
+NN0436008,Greasewood Springs Community Boarding School BIA,S,EP901,GW,EP901,9,NN
+NN3500211,Mariano Lake-Pinedale-Church Rock NTUA,S,16T595,GW,EP001,9,NN
+NN3500211,Mariano Lake-Pinedale-Church Rock NTUA,S,16T596,GW,EP002,9,NN
+NN3500211,Mariano Lake-Pinedale-Church Rock NTUA,S,160691,GW,EP003,9,NN
+NN3500211,Mariano Lake-Pinedale-Church Rock NTUA,S,160694,GW,EP004,9,NN
+NN3500211,Mariano Lake-Pinedale-Church Rock NTUA,S,16T538B,GW,EP005,9,NN
+NN3500245,Farmington Rural-Shiprock-Beclabito NTUA,L,10001,SW,EP001,9,NN
+NN3503028,Toadlena NTUA,S,120766,GW,EP001,9,NN
+NN3503028,Toadlena NTUA,S,12T611,GW,EP002,9,NN
+NN3503039,Crownpoint-Littlewater-Three Mile Point NTUA,S,150581,GW,EP002,9,NN
+NN3503039,Crownpoint-Littlewater-Three Mile Point NTUA,S,15T567,GW,EP003,9,NN
