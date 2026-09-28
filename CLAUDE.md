@@ -44,7 +44,7 @@ Within a session activity, use what the course has introduced by that session, s
 |---|---|
 | 2 | `numpy`, `matplotlib.pyplot`, `scipy.stats.linregress`, `np.loadtxt`, relative paths, version cell |
 | 4 | `open()`, string slicing, `dict` and `.get()` for instrument file headers |
-| 5 | `pandas`: `read_csv`, `DataFrame`, `groupby` (with `.mean()`, `.any()`), `merge`, `melt`, the `.str` accessor for `split`, `pd.to_numeric` with `errors="coerce"`, `.isna()`, tidy data; `ax.bar` |
+| 5 | `pandas`: `read_csv` (with `dtype` for identifier columns), `DataFrame`, boolean indexing, `.loc` assignment, `astype`, `.isna()`, `.fillna(0)` as a counterfactual check, `groupby` (with `.mean()`, `.sum()`, `.size()`, `.any()`), `merge`, `melt`, the `.str` accessor for `split` and `startswith`, tidy data; `ax.bar` |
 | 6 | `pathlib.Path`, looping over files, f-strings for reports |
 | 7 | full `matplotlib`: subplots, colormaps, twin axes, `GridSpec` |
 | 8 | `numpy.random` with a seed, `scipy.signal` basics |
