@@ -1,0 +1,17 @@
+position,file,kind,level_mg_L,sample,replicate,instrument,note
+1,standards/std_0p00.csv,standard,0.00,,,UV-1,reagent blank
+2,standards/std_0p10.csv,standard,0.10,,,UV-1,
+3,standards/std_0p25.csv,standard,0.25,,,UV-1,
+4,standards/std_0p50.csv,standard,0.50,,,UV-1,
+5,standards/std_1p00.csv,standard,1.00,,,UV-1,
+6,standards/std_2p00.csv,standard,2.00,,,UV-1,
+7,standards/std_4p00.csv,standard,4.00,,,UV-1,
+8,samples/spring_rep1.csv,sample,,spring,1,UV-1,
+9,samples/spring_rep2.csv,sample,,spring,2,UV-2,re-measured on UV-2 after UV-1 lamp fault
+10,samples/spring_rep3.csv,sample,,spring,3,UV-1,
+11,samples/river_rep1.csv,sample,,river,1,UV-1,
+12,samples/river_rep2.csv,sample,,river,2,UV-1,
+13,samples/river_rep3.csv,sample,,river,3,UV-1,
+14,samples/well_rep1.csv,sample,,well,1,UV-1,
+15,samples/well_rep2.csv,sample,,well,2,UV-1,
+16,samples/well_rep3.csv,sample,,well,3,UV-1,

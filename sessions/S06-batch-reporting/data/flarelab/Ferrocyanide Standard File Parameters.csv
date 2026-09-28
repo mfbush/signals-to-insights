@@ -1,0 +1,214 @@
+dateID,Version ID,Distance Setting,Experiment type,standard type,Filename,concentration (M)
+240206,v1,100,Background,Ferrocyanide,LE_240206v1_d_100_mm_Background_counts_Ferrocyanide_standard_FLMS018081_17-38-09-605.txt,0
+240206,v1,100,Ferrocyanide counts,Ferrocyanide,LE_240206v1_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-41-37-091.txt,0.000001
+240206,v1,100,initial with water,Ferrocyanide,LE_240206v1_d_100_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_17-39-59-599.txt,0
+240206,v1,150,Background,Ferrocyanide,LE_240206v1_d_150_mm_Background_counts_Ferrocyanide_standard_FLMS018081_17-28-44-151.txt,0
+240206,v1,150,Ferrocyanide counts,Ferrocyanide,LE_240206v1_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-31-59-135.txt,0.000001
+240206,v1,150,initial with water,Ferrocyanide,LE_240206v1_d_150_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_17-30-09-142.txt,0
+240206,v1,200,Background,Ferrocyanide,LE_240206v1_d_200_mm_Background_counts_Ferrocyanide_standard_FLMS018081_17-18-04-817.txt,0
+240206,v1,200,Ferrocyanide counts,Ferrocyanide,LE_240206v1_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-23-03-177.txt,0.000001
+240206,v1,200,initial with water,Ferrocyanide,LE_240206v1_d_200_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_17-20-53-188.txt,0
+240206,v1,250,Background,Ferrocyanide,LE_240206v1_d_250_mm_Background_counts_Ferrocyanide_standard_FLMS018081_16-38-01-910.txt,0
+240206,v1,250,Ferrocyanide counts,Ferrocyanide,LE_240206v1_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-41-31-891.txt,0.000001
+240206,v1,250,initial with water,Ferrocyanide,LE_240206v1_d_250_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_16-39-46-903.txt,0
+240206,v1,300,Background,Ferrocyanide,LE_240206v1_d_300_mm_Background_counts_Ferrocyanide_standard_FLMS018081_16-21-29-983.txt,0
+240206,v1,300,Ferrocyanide counts,Ferrocyanide,LE_240206v1_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-27-29-956.txt,0.000001
+240206,v1,300,initial with water,Ferrocyanide,LE_240206v1_d_300_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_16-24-09-972.txt,0
+240206,v1,350,Background,Ferrocyanide,LE_240206v1_d_350_mm_Background_counts_Ferrocyanide_standard_FLMS018081_16-01-57-080.txt,0
+240206,v1,350,Ferrocyanide counts,Ferrocyanide,LE_240206v1_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-09-27-036.txt,0.000001
+240206,v1,350,initial with water,Ferrocyanide,LE_240206v1_d_350_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_16-05-57-054.txt,0
+240206,v1,50,Background,Ferrocyanide,LE_240206v1_d_50_mm_Background_counts_Ferrocyanide_standard_FLMS018081_17-47-19-815.txt,0
+240206,v1,50,Ferrocyanide counts,Ferrocyanide,LE_240206v1_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-49-44-802.txt,0.000001
+240206,v1,50,initial with water,Ferrocyanide,LE_240206v1_d_50_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_17-48-11-810.txt,0
+240206,v1,550,Background,Ferrocyanide,LE_240206v1_d_550_mm_Background_counts_Ferrocyanide_standard_FLMS018081_15-28-25-723.txt,0
+240206,v1,550,Ferrocyanide counts,Ferrocyanide,LE_240206v1_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-38-10-677.txt,0.000001
+240206,v1,550,initial with water,Ferrocyanide,LE_240206v1_d_550_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_15-33-50-701.txt,0
+240206,v1,750,Background,Ferrocyanide,LE_240206v1_d_750_mm_Background_counts_Ferrocyanide_standard_FLMS018081_14-53-14-845.txt,0
+240206,v1,750,Ferrocyanide counts,Ferrocyanide,LE_240206v1_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-05-40-821.txt,0.000001
+240206,v1,750,initial with water,Ferrocyanide,LE_240206v1_d_750_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_15-00-15-859.txt,0
+240206,v2,100,Ferrocyanide counts,Ferrocyanide,LE_240206v2_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-43-27-082.txt,0.000005
+240206,v2,150,Ferrocyanide counts,Ferrocyanide,LE_240206v2_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-33-04-134.txt,0.000005
+240206,v2,200,Ferrocyanide counts,Ferrocyanide,LE_240206v2_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-24-13-170.txt,0.000005
+240206,v2,250,Ferrocyanide counts,Ferrocyanide,LE_240206v2_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-43-16-882.txt,0.000005
+240206,v2,300,Ferrocyanide counts,Ferrocyanide,LE_240206v2_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-29-49-942.txt,0.000005
+240206,v2,350,Ferrocyanide counts,Ferrocyanide,LE_240206v2_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-11-57-021.txt,0.000005
+240206,v2,50,Ferrocyanide counts,Ferrocyanide,LE_240206v2_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-50-32-801.txt,0.000005
+240206,v2,550,Ferrocyanide counts,Ferrocyanide,LE_240206v2_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-43-35-655.txt,0.000005
+240206,v2,750,Ferrocyanide counts,Ferrocyanide,LE_240206v2_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-12-10-803.txt,0.000005
+240206,v3,100,Ferrocyanide counts,Ferrocyanide,LE_240206v3_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-44-32-076.txt,0.00001
+240206,v3,150,Ferrocyanide counts,Ferrocyanide,LE_240206v3_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-34-44-125.txt,0.00001
+240206,v3,200,Ferrocyanide counts,Ferrocyanide,LE_240206v3_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-25-23-165.txt,0.00001
+240206,v3,250,Ferrocyanide counts,Ferrocyanide,LE_240206v3_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-45-46-868.txt,0.00001
+240206,v3,300,Ferrocyanide counts,Ferrocyanide,LE_240206v3_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-32-29-929.txt,0.00001
+240206,v3,350,Ferrocyanide counts,Ferrocyanide,LE_240206v3_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-15-27-007.txt,0.00001
+240206,v3,50,Ferrocyanide counts,Ferrocyanide,LE_240206v3_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-51-15-795.txt,0.00001
+240206,v3,550,Ferrocyanide counts,Ferrocyanide,LE_240206v3_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-51-10-627.txt,0.00001
+240206,v3,750,Ferrocyanide counts,Ferrocyanide,LE_240206v3_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-17-35-774.txt,0.00001
+240206,v4,100,Ferrocyanide counts,Ferrocyanide,LE_240206v4_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-45-19-572.txt,0.00005
+240206,v4,150,Ferrocyanide counts,Ferrocyanide,LE_240206v4_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-36-04-117.txt,0.00005
+240206,v4,200,Ferrocyanide counts,Ferrocyanide,LE_240206v4_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-26-43-158.txt,0.00005
+240206,v4,250,Ferrocyanide counts,Ferrocyanide,LE_240206v4_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-47-16-872.txt,0.00005
+240206,v4,300,Ferrocyanide counts,Ferrocyanide,LE_240206v4_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-35-09-920.txt,0.00005
+240206,v4,350,Ferrocyanide counts,Ferrocyanide,LE_240206v4_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-18-26-995.txt,0.00005
+240206,v4,50,Ferrocyanide counts,Ferrocyanide,LE_240206v4_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-51-52-795.txt,0.00005
+240206,v4,550,Ferrocyanide counts,Ferrocyanide,LE_240206v4_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-56-35-594.txt,0.00005
+240206,v4,750,Ferrocyanide counts,Ferrocyanide,LE_240206v4_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-23-00-741.txt,0.00005
+240207,v10,100,Ferrocyanide counts,Ferrocyanide,LE_240207v10_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-37-48-291.txt,0.05
+240207,v10,150,Ferrocyanide counts,Ferrocyanide,LE_240207v10_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-36-52-796.txt,0.05
+240207,v10,200,Ferrocyanide counts,Ferrocyanide,LE_240207v10_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-35-11-801.txt,0.05
+240207,v10,250,Ferrocyanide counts,Ferrocyanide,LE_240207v10_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-33-35-304.txt,0.05
+240207,v10,300,Ferrocyanide counts,Ferrocyanide,LE_240207v10_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-30-58-311.txt,0.05
+240207,v10,350,Ferrocyanide counts,Ferrocyanide,LE_240207v10_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-28-25-319.txt,0.05
+240207,v10,50,Ferrocyanide counts,Ferrocyanide,LE_240207v10_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-38-24-039.txt,0.05
+240207,v10,550,Ferrocyanide counts,Ferrocyanide,LE_240207v10_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-22-03-837.txt,0.05
+240207,v10,750,Ferrocyanide counts,Ferrocyanide,LE_240207v10_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-16-38-851.txt,0.05
+240207,v11,100,Ferrocyanide counts,Ferrocyanide,LE_240207v11_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_19-00-32-085.txt,0.1
+240207,v11,150,Ferrocyanide counts,Ferrocyanide,LE_240207v11_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-59-34-088.txt,0.1
+240207,v11,200,Ferrocyanide counts,Ferrocyanide,LE_240207v11_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-58-33-094.txt,0.1
+240207,v11,250,Ferrocyanide counts,Ferrocyanide,LE_240207v11_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-57-11-603.txt,0.1
+240207,v11,300,Ferrocyanide counts,Ferrocyanide,LE_240207v11_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-55-04-602.txt,0.1
+240207,v11,350,Ferrocyanide counts,Ferrocyanide,LE_240207v11_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-52-41-609.txt,0.1
+240207,v11,50,Ferrocyanide counts,Ferrocyanide,LE_240207v11_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_19-01-02-835.txt,0.1
+240207,v11,550,Ferrocyanide counts,Ferrocyanide,LE_240207v11_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-48-25-122.txt,0.1
+240207,v11,750,Ferrocyanide counts,Ferrocyanide,LE_240207v11_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-43-00-132.txt,0.1
+240207,v5,100,Background,Ferrocyanide,LE_240207v5_d_100_mm_Background_counts_Ferrocyanide_standard_FLMS018081_17-00-03-835.txt,0
+240207,v5,100,Ferrocyanide counts,Ferrocyanide,LE_240207v5_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-02-41-329.txt,0.0001
+240207,v5,100,initial with water,Ferrocyanide,LE_240207v5_d_100_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_17-01-18-832.txt,0
+240207,v5,150,Background,Ferrocyanide,LE_240207v5_d_150_mm_Background_counts_Ferrocyanide_standard_FLMS018081_16-47-25-872.txt,0
+240207,v5,150,Ferrocyanide counts,Ferrocyanide,LE_240207v5_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-52-45-858.txt,0.0001
+240207,v5,150,initial with water,Ferrocyanide,LE_240207v5_d_150_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_16-49-10-863.txt,0
+240207,v5,200,Background,Ferrocyanide,LE_240207v5_d_200_mm_Background_counts_Ferrocyanide_standard_FLMS018081_16-35-49-905.txt,0
+240207,v5,200,Ferrocyanide counts,Ferrocyanide,LE_240207v5_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-39-49-888.txt,0.0001
+240207,v5,200,initial with water,Ferrocyanide,LE_240207v5_d_200_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_16-37-59-893.txt,0
+240207,v5,250,Background,Ferrocyanide,LE_240207v5_d_250_mm_Background_counts_Ferrocyanide_standard_FLMS018081_16-18-58-454.txt,0
+240207,v5,250,Ferrocyanide counts,Ferrocyanide,LE_240207v5_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-23-28-443.txt,0.0001
+240207,v5,250,initial with water,Ferrocyanide,LE_240207v5_d_250_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_16-20-58-439.txt,0
+240207,v5,300,Background,Ferrocyanide,LE_240207v5_d_300_mm_Background_counts_Ferrocyanide_standard_FLMS018081_16-04-36-485.txt,0
+240207,v5,300,Ferrocyanide counts,Ferrocyanide,LE_240207v5_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-08-56-486.txt,0.0001
+240207,v5,300,initial with water,Ferrocyanide,LE_240207v5_d_300_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_16-06-36-481.txt,0
+240207,v5,350,Background,Ferrocyanide,LE_240207v5_d_350_mm_Background_counts_Ferrocyanide_standard_FLMS018081_15-42-33-543.txt,0
+240207,v5,350,Ferrocyanide counts,Ferrocyanide,LE_240207v5_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-50-03-523.txt,0.0001
+240207,v5,350,initial with water,Ferrocyanide,LE_240207v5_d_350_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_15-47-03-538.txt,0
+240207,v5,50,Background,Ferrocyanide,LE_240207v5_d_50_mm_Background_counts_Ferrocyanide_standard_FLMS018081_17-07-13-567.txt,0
+240207,v5,50,Ferrocyanide counts,Ferrocyanide,LE_240207v5_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-09-06-561.txt,0.0001
+240207,v5,50,initial with water,Ferrocyanide,LE_240207v5_d_50_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_17-08-18-566.txt,0
+240207,v5,550,Background,Ferrocyanide,LE_240207v5_d_550_mm_Background_counts_Ferrocyanide_standard_FLMS018081_15-09-27-163.txt,0
+240207,v5,550,Ferrocyanide counts,Ferrocyanide,LE_240207v5_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-21-22-109.txt,0.0001
+240207,v5,550,initial with water,Ferrocyanide,LE_240207v5_d_550_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_15-14-52-122.txt,0
+240207,v5,750,Background,Ferrocyanide,LE_240207v5_d_750_mm_Background_counts_Ferrocyanide_standard_FLMS018081_14-32-32-138.txt,0
+240207,v5,750,Ferrocyanide counts,Ferrocyanide,LE_240207v5_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_14-47-47-196.txt,0.0001
+240207,v5,750,initial with water,Ferrocyanide,LE_240207v5_d_750_mm_initial_with_water_counts_Ferrocyanide_standard_FLMS018081_14-42-22-215.txt,0
+240207,v6,100,Ferrocyanide counts,Ferrocyanide,LE_240207v6_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-03-53-826.txt,0.0005
+240207,v6,150,Ferrocyanide counts,Ferrocyanide,LE_240207v6_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-54-05-850.txt,0.0005
+240207,v6,200,Ferrocyanide counts,Ferrocyanide,LE_240207v6_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-40-49-892.txt,0.0005
+240207,v6,250,Ferrocyanide counts,Ferrocyanide,LE_240207v6_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-24-58-427.txt,0.0005
+240207,v6,300,Ferrocyanide counts,Ferrocyanide,LE_240207v6_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-11-36-465.txt,0.0005
+240207,v6,350,Ferrocyanide counts,Ferrocyanide,LE_240207v6_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-53-03-545.txt,0.0005
+240207,v6,50,Ferrocyanide counts,Ferrocyanide,LE_240207v6_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-10-12-562.txt,0.0005
+240207,v6,550,Ferrocyanide counts,Ferrocyanide,LE_240207v6_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-25-42-093.txt,0.0005
+240207,v6,750,Ferrocyanide counts,Ferrocyanide,LE_240207v6_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_14-53-12-178.txt,0.0005
+240207,v7,100,Ferrocyanide counts,Ferrocyanide,LE_240207v7_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-04-31-323.txt,0.001
+240207,v7,150,Ferrocyanide counts,Ferrocyanide,LE_240207v7_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-55-05-849.txt,0.001
+240207,v7,200,Ferrocyanide counts,Ferrocyanide,LE_240207v7_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-42-59-884.txt,0.001
+240207,v7,250,Ferrocyanide counts,Ferrocyanide,LE_240207v7_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-26-58-423.txt,0.001
+240207,v7,300,Ferrocyanide counts,Ferrocyanide,LE_240207v7_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-13-56-457.txt,0.001
+240207,v7,350,Ferrocyanide counts,Ferrocyanide,LE_240207v7_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-58-33-507.txt,0.001
+240207,v7,50,Ferrocyanide counts,Ferrocyanide,LE_240207v7_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-11-10-559.txt,0.001
+240207,v7,550,Ferrocyanide counts,Ferrocyanide,LE_240207v7_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-31-07-084.txt,0.001
+240207,v7,750,Ferrocyanide counts,Ferrocyanide,LE_240207v7_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_14-59-42-163.txt,0.001
+240207,v8,100,Ferrocyanide counts,Ferrocyanide,LE_240207v8_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-05-21-319.txt,0.005
+240207,v8,150,Ferrocyanide counts,Ferrocyanide,LE_240207v8_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-57-00-843.txt,0.005
+240207,v8,200,Ferrocyanide counts,Ferrocyanide,LE_240207v8_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-44-29-884.txt,0.005
+240207,v8,250,Ferrocyanide counts,Ferrocyanide,LE_240207v8_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-29-13-418.txt,0.005
+240207,v8,300,Ferrocyanide counts,Ferrocyanide,LE_240207v8_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-16-16-450.txt,0.005
+240207,v8,350,Ferrocyanide counts,Ferrocyanide,LE_240207v8_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_16-01-33-501.txt,0.005
+240207,v8,50,Ferrocyanide counts,Ferrocyanide,LE_240207v8_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-12-34-555.txt,0.005
+240207,v8,550,Ferrocyanide counts,Ferrocyanide,LE_240207v8_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-38-42-060.txt,0.005
+240207,v8,750,Ferrocyanide counts,Ferrocyanide,LE_240207v8_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_15-05-07-150.txt,0.005
+240207,v9,100,Ferrocyanide counts,Ferrocyanide,LE_240207v9_d_100_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-10-40-518.txt,0.01
+240207,v9,150,Ferrocyanide counts,Ferrocyanide,LE_240207v9_d_150_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-09-02-512.txt,0.01
+240207,v9,200,Ferrocyanide counts,Ferrocyanide,LE_240207v9_d_200_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-06-46-518.txt,0.01
+240207,v9,250,Ferrocyanide counts,Ferrocyanide,LE_240207v9_d_250_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-04-20-030.txt,0.01
+240207,v9,300,Ferrocyanide counts,Ferrocyanide,LE_240207v9_d_300_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-02-33-034.txt,0.01
+240207,v9,350,Ferrocyanide counts,Ferrocyanide,LE_240207v9_d_350_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-59-30-055.txt,0.01
+240207,v9,50,Ferrocyanide counts,Ferrocyanide,LE_240207v9_d_50_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_18-11-52-756.txt,0.01
+240207,v9,550,Ferrocyanide counts,Ferrocyanide,LE_240207v9_d_550_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-55-43-551.txt,0.01
+240207,v9,750,Ferrocyanide counts,Ferrocyanide,LE_240207v9_d_750_mm_ferrocyanide_counts_Ferrocyanide_standard_FLMS018081_17-50-18-572.txt,0.01
+240409,v6,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v6_FLMS018081_17-18-29-641.txt,0.0005
+240409,v7,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v7_FLMS018081_17-19-10-639.txt,0.001
+240409,v8,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v8_FLMS018081_17-19-35-632.txt,0.005
+240409,v9,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v9_FLMS018081_18-00-17-163.txt,0.01
+240409,v10,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v10_FLMS018081_18-01-12-158.txt,0.05
+240409,v11,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v11_FLMS018081_18-01-36-156.txt,0.1
+240409,NA,50,initial counts,Ferrocyanide,LE_240409_d_50_mm_initial_counts_FLMS018081_16-13-25-200.txt,NA
+240409,NA,50,Background,Ferrocyanide,LE_240409_d_50_mm_Background_counts_FLMS018081_16-12-51-202.txt,NA
+240409,v1,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v1_FLMS018081_16-14-49-198.txt,0.000001
+240409,v2,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v2_FLMS018081_16-15-12-196.txt,0.000005
+240409,v3,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v3_FLMS018081_16-15-51-195.txt,0.00001
+240409,v4,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v4_FLMS018081_16-18-21-191.txt,0.00005
+240409,v5,50,Ferrocyanide counts,Ferrocyanide,LE_240409_d_50_mm_ferrocyanide_counts_v5_FLMS018081_17-18-03-634.txt,0.0001
+240409,v2,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v2_FLMS018081_16-08-59-211.txt,0.000005
+240409,v3,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v3_FLMS018081_16-09-59-208.txt,0.00001
+240409,v4,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v4_FLMS018081_16-11-19-204.txt,0.00005
+240409,v5,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v5_FLMS018081_17-13-56-651.txt,0.0001
+240409,v6,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v6_FLMS018081_17-14-46-645.txt,0.0005
+240409,v7,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v7_FLMS018081_17-15-46-642.txt,0.001
+240409,v8,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v8_FLMS018081_17-16-46-640.txt,0.005
+240409,v9,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v9_FLMS018081_17-57-21-174.txt,0.01
+240409,v10,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v10_FLMS018081_17-58-21-173.txt,0.05
+240409,v11,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v11_FLMS018081_17-59-21-164.txt,0.1
+240409,NA,200,initial counts,Ferrocyanide,LE_240409_d_200_mm_initial_counts_FLMS018081_16-06-19-223.txt,NA
+240409,NA,200,Background,Ferrocyanide,LE_240409_d_200_mm_Background_counts_FLMS018081_16-04-59-217.txt,NA
+240409,v1,200,Ferrocyanide counts,Ferrocyanide,LE_240409_d_200_mm_ferrocyanide_counts_v1_FLMS018081_16-07-39-211.txt,0.000001
+240409,v4,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v4_FLMS018081_16-00-07-722.txt,0.00005
+240409,v5,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v5_FLMS018081_16-52-45-201.txt,0.0001
+240409,v6,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v6_FLMS018081_16-58-10-187.txt,0.0005
+240409,v7,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v7_FLMS018081_17-03-35-182.txt,0.001
+240409,v8,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v8_FLMS018081_17-10-05-158.txt,0.005
+240409,v9,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v9_FLMS018081_17-43-14-703.txt,0.01
+240409,v10,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v10_FLMS018081_17-48-39-694.txt,0.05
+240409,v11,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v11_FLMS018081_17-54-04-678.txt,0.1
+240409,NA,550,initial counts,Ferrocyanide,LE_240409_d_550_mm_initial_counts_FLMS018081_15-34-07-808.txt,NA
+240409,NA,550,Background,Ferrocyanide,LE_240409_d_550_mm_Background_counts_FLMS018081_15-42-47-761.txt,NA
+240409,v1,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v1_FLMS018081_15-48-12-748.txt,0.000001
+240409,v2,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v2_FLMS018081_15-52-32-741.txt,0.000005
+240409,v3,550,Ferrocyanide counts,Ferrocyanide,LE_240409_d_550_mm_ferrocyanide_counts_v3_FLMS018081_15-56-52-727.txt,0.00001
+240410,v5,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v5_FLMS018081_17-03-39-450.txt,0.0001
+240410,v6,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v6_FLMS018081_17-04-33-447.txt,0.0005
+240410,v7,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v7_FLMS018081_17-04-56-448.txt,0.001
+240410,v8,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v8_FLMS018081_17-05-22-446.txt,0.005
+240410,v9,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v9_FLMS018081_19-37-46-730.txt,0.01
+240410,v10,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v10_FLMS018081_19-38-15-730.txt,0.05
+240410,v11,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v11_FLMS018081_19-38-37-726.txt,0.1
+240410,NA,50,initial counts,Ferrocyanide,LE_240410_d_50_mm_initial_counts_FLMS018081_15-34-52-974.txt,NA
+240410,NA,50,Background,Ferrocyanide,LE_240410_d_50_mm_Background_counts_FLMS018081_15-34-23-973.txt,NA
+240410,v1,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v1_FLMS018081_15-40-20-017.txt,0.000001
+240410,v2,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v2_FLMS018081_16-04-41-973.txt,0.000005
+240410,v3,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v3_FLMS018081_16-05-17-974.txt,0.00001
+240410,v4,50,Ferrocyanide counts,Ferrocyanide,LE_240410_d_50_mm_ferrocyanide_counts_v4_FLMS018081_16-05-37-968.txt,0.00005
+240410,v4,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v4_FLMS018081_15-32-49-979.txt,0.00005
+240410,v5,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v5_FLMS018081_16-58-56-462.txt,0.0001
+240410,v6,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v6_FLMS018081_17-00-06-462.txt,0.0005
+240410,v7,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v7_FLMS018081_17-01-26-456.txt,0.001
+240410,v8,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v8_FLMS018081_17-02-26-462.txt,0.005
+240410,v9,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v9_FLMS018081_19-33-56-739.txt,0.01
+240410,v10,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v10_FLMS018081_19-35-36-741.txt,0.05
+240410,v11,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v11_FLMS018081_19-36-46-733.txt,0.1
+240410,NA,200,initial counts,Ferrocyanide,LE_240410_d_200_mm_initial_counts_FLMS018081_15-27-49-997.txt,NA
+240410,v1,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v1_FLMS018081_15-29-29-990.txt,0.000001
+240410,v2,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v2_FLMS018081_15-30-39-986.txt,0.000005
+240410,v3,200,Ferrocyanide counts,Ferrocyanide,LE_240410_d_200_mm_ferrocyanide_counts_v3_FLMS018081_15-31-49-983.txt,0.00001
+240410,NA,200,Background,Ferrocyanide,LE_240410_d_200_mm_Background_counts_FLMS018081_15-26-20-011.txt,NA
+240410,NA,550,Background,Ferrocyanide,LE_240410_d_550_mm_Background_counts_FLMS018081_14-52-23-675.txt,NA
+240410,v1,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v1_FLMS018081_15-02-08-603.txt,0.000001
+240410,v2,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v2_FLMS018081_15-07-33-597.txt,0.000005
+240410,v3,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v3_FLMS018081_15-12-58-553.txt,0.00001
+240410,v4,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v4_FLMS018081_15-17-18-535.txt,0.00005
+240410,v5,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v5_FLMS018081_16-40-50-009.txt,0.0001
+240410,v6,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v6_FLMS018081_16-46-15-001.txt,0.0005
+240410,v7,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v7_FLMS018081_16-50-34-990.txt,0.001
+240410,v8,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v8_FLMS018081_16-55-59-969.txt,0.005
+240410,v9,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v9_FLMS018081_19-20-00-270.txt,0.01
+240410,v10,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v10_FLMS018081_19-25-25-258.txt,0.05
+240410,v11,550,Ferrocyanide counts,Ferrocyanide,LE_240410_d_550_mm_ferrocyanide_counts_v11_FLMS018081_19-30-50-248.txt,0.1
+240410,NA,550,initial counts,Ferrocyanide,LE_240410_d_550_mm_initial_counts_FLMS018081_14-57-48-622.txt,NA

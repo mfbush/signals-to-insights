@@ -1,1 +1,4 @@
 * text=auto eol=lf
+
+# Session 6: FlareLab spectra kept byte for byte as published (mixed LF, CR, CRLF endings)
+sessions/S06-batch-reporting/data/flarelab/** -text
