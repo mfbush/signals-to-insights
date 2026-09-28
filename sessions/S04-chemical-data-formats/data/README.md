@@ -6,7 +6,7 @@ One committed file, the acetone spectrum that section 1 of the activity reads, a
 
 Gas-phase infrared spectrum of acetone, CAS registry number 67-64-1, from the NIST Chemistry WebBook. The record comes from the NIST/EPA Gas-Phase Infrared Database, measured by Sadtler Research Laboratories under contract to the US EPA, as the file's `ORIGIN` and `$NIST SOURCE` fields say. It was downloaded on 2026-09-27 from the [WebBook's JCAMP-DX download link for the acetone IR spectrum](https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C67641&Index=0&Type=IR) and is unchanged apart from its line endings.
 
-The file is JCAMP-DX, plain text: 24 header fields of the form `##NAME=value`, then a data block of 88 lines in the `(X++(Y..Y))` form, one wavenumber followed by ten stored integers per line. The header fields that fix what the numbers mean:
+The file is JCAMP-DX, plain text: a 25 line header of `##NAME=value` fields (23 of them, plus two lines continuing the owner's notice), then a data block of 88 lines in the `(X++(Y..Y))` form, one wavenumber followed by ten stored integers per line, then `##END=`. The header fields that fix what the numbers mean:
 
 | Field | Value | Meaning |
 |---|---|---|
