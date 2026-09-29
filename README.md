@@ -15,7 +15,7 @@ A straight line through six UV-Vis calibration standards gives R² = 0.997, i.e.
 | Instructor | Matt Bush, mattbush@uw.edu |
 | Teaching assistants | Lucas Narisawa and Chris Weir, by Canvas message |
 | Office hours | The third hour of every session, about 3:30 to 4:20 pm in the classroom, and appointments by email |
-| Course materials | This repository. Each session's notes, notebook and data are added to `sessions/` before that session |
+| Course materials | This repository, in `sessions/`. Folders for later sessions are drafts and may change until that session runs |
 | Submissions and grades | Canvas |
 | Final exam | None. The final project replaces it |
 
@@ -69,7 +69,7 @@ The dates on this page, the topics of sessions 1 to 3 and the grading weights ar
 
 ## Getting set up
 
-You work on your own laptop, in VS Code, with Python managed by `uv` and with Claude Code as the assistant. The [setup guide](setup.md) installs all of it in about 45 minutes and ends with a notebook that tells you whether it worked. Claude Code needs a paid Claude plan; the course is designed around the Pro plan, about $60 for the quarter, and the setup guide says how to subscribe. If you do not have a laptop that can run Windows 10 or 11 or macOS 14 or later, the [Student Technology Loan Program](https://stlp.uw.edu/) lends laptops for the quarter at no cost; reserve one this week and tell Matt, because setup needs a laptop on which you can install software.
+You work on your own laptop, in VS Code, with Python managed by `uv` and with Claude Code as the assistant. The [setup guide](setup.md) installs all of it in about an hour and ends with a notebook that tells you whether it worked. Claude Code needs a paid Claude plan; the course is designed around the Pro plan, about $60 for the quarter, and the setup guide says how to subscribe. If you do not have a laptop that can run Windows 10 or 11 or macOS 14 or later, the [Student Technology Loan Program](https://stlp.uw.edu/) lends laptops for the quarter at no cost; reserve one this week and tell Matt, because setup needs a laptop on which you can install software.
 
 You do not need a working install on October 1. Sessions 1 to 3 have time and help for setup in the room, and no grade in those sessions depends on your install. In sessions 2 and 3 a student whose laptop does not yet work pairs with one whose laptop does, and the pair submits one notebook with both names. Tuesday, October 13 (session 4) is the date by which every laptop must work, because from then on the assistant is part of every activity. Fill in the setup status survey on Canvas before session 1, whatever state your install is in.
 
@@ -120,7 +120,7 @@ You choose a chemical question and answer it with the methods of the course, on 
 4. **Final submission, Wednesday, December 9.** The complete notebook, which runs from a clean start; a one page visual summary; and the judgment log with a short paragraph on how you used AI in the project.
 5. **Gallery presentation, Thursday, December 10.** You present your visual summary at a station and review two classmates' projects. The presentation is required and is not scored separately.
 
-The [project page](final-project.md) has the full description, the rubrics and the oral check-in questions. The [CHEM 427 project list](project-list.md) is published by October 15.
+The [project page](final-project.md) has the full description, the rubrics and the oral check-in questions. The [CHEM 427 project list](project-list.md) is up now as a draft and is final on October 15, when the preferences survey opens.
 
 ### From percentage to grade
 
@@ -209,6 +209,10 @@ If stress, health or a situation outside class is getting in the way of your wor
 ## Acknowledgments
 
 This course was developed with support from the UW Data Science Minor. Its datasets are public instrument data, cited in each session, or simulated with a documented generator, and I thank the researchers whose published data make the activities possible.
+
+## License
+
+The written content is under [CC BY 4.0](LICENSE-content.md) and the code under the [MIT License](LICENSE). Data files keep the terms of their source, given in each session's `data/README.md`.
 
 ## Contributing
 

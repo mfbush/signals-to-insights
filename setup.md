@@ -1,6 +1,6 @@
 # Setting up your laptop for CHEM 427/527
 
-To do the work in this course, your laptop needs five things: git, Python managed by a tool called uv, VS Code, Claude Code, and a copy of this repository. This guide installs them in that order and ends with a notebook that tells you whether everything works. Plan on 45 minutes and about 3 GB of free disk space.
+To do the work in this course, your laptop needs five things: git, Python managed by a tool called uv, VS Code, Claude Code, and a copy of this repository. This guide installs them in that order and ends with a notebook that tells you whether everything works. Plan on about an hour and about 3 GB of free disk space.
 
 Your laptop needs Windows 10 or 11, or macOS 14 (Sonoma) or later, and at least 4 GB of memory. To check a Mac, open the Apple menu and choose **About This Mac**. Claude Code needs macOS 13 or later, and VS Code supports only the three newest macOS releases. Every Apple silicon Mac, and most Intel Macs from 2018 or later, can update to macOS 14 for free through **System Settings**, **General**, **Software Update**. If yours cannot, say so in the setup status survey before you start, and Matt will follow up.
 

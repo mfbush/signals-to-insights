@@ -16,7 +16,7 @@ Each of you has a project mentor from the instructional team, named on Canvas by
 
 ## CHEM 427 and CHEM 527
 
-CHEM 427 students choose a project from the [CHEM 427 project list](project-list.md), published by Thursday, October 15. Each project on the list gives the question, the data source and enough chemical context to start. Each project goes to one student. Rank your three preferred projects on the Canvas survey "CHEM 427 project preferences" by Sunday, November 1, and Matt assigns each of you one project by Tuesday, November 3, from your three wherever the choices allow. Each student works and submits alone. A CHEM 427 student may instead propose their own project under the CHEM 527 expectations.
+CHEM 427 students choose a project from the [CHEM 427 project list](project-list.md), up now as a draft and final on Thursday, October 15. Each project on the list gives the question, the data source and enough chemical context to start. Each project goes to one student. Rank your three preferred projects on the Canvas survey "CHEM 427 project preferences" by Sunday, November 1, and Matt assigns each of you one project by Tuesday, November 3, from your three wherever the choices allow. Each student works and submits alone. A CHEM 427 student may instead propose their own project under the CHEM 527 expectations.
 
 CHEM 527 students propose their own question and find their own data. The proposal has to show that the data can answer the question, which is the part of the project that CHEM 527 adds.
 

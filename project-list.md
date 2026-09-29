@@ -1,6 +1,6 @@
 # CHEM 427 project list
 
-Each project below is a question, a public dataset and enough chemistry to start. Every dataset has been downloaded and loaded by the instructional team, and the first analysis named for each project has been run on it, so each one is feasible by the working draft on November 22. The answers are not given here: the question is yours to settle from the data.
+Each project below is a question, a public dataset and enough chemistry to start. Every dataset has been downloaded and loaded by the instructional team, and the first analysis named for each project has been run on it, so each one is feasible by the working draft on November 22. The answers are not given here: the question is yours to settle from the data. This list is a draft until Thursday, October 15, when the preferences survey opens on Canvas; a project may still change or be added before then.
 
 Each project goes to one student. Rank your three preferred projects on the Canvas survey "CHEM 427 project preferences" by Sunday, November 1, and Matt assigns each of you one project by Tuesday, November 3, from your three wherever the choices allow. Each student works and submits alone. Your topic declaration, due Sunday, November 8, names the project you were assigned, loads the data from a relative path, and prints the number of rows, the column names and the units of the measured variable, as set out on the [final project page](final-project.md). Record the date you download the data, because you cite it with that access date.
 
