@@ -118,7 +118,7 @@ You choose a chemical question and answer it with the methods of the course, on 
 2. **Working draft with judgment log, Sunday, November 22.** A notebook that loads and explores your data and makes a first analysis, plus your judgment log, which collects the judgment entries you have written about your project's data, at least two by this date.
 3. **Oral check-in, session 16.** A seven minute conversation with your mentor, with your notebook open. You explain choices you made in your own notebook. The question bank is on the project page, so preparing means studying your own reasoning. A low score earns a second check-in in session 19.
 4. **Final submission, Wednesday, December 9.** The complete notebook, which runs from a clean start; a one page visual summary; and the judgment log with a short paragraph on how you used AI in the project.
-5. **Gallery presentation, Thursday, December 10.** You present your visual summary at a station and review two classmates' projects. The presentation is required and is not scored separately.
+5. **Gallery presentation, Thursday, December 10.** You present your visual summary at a station and review two classmates' projects. The presentation is required and is not scored separately; missing it without notice or a documented reason costs 4 of the final submission's 30 points, and there is no makeup.
 
 The [project page](final-project.md) has the full description, the rubrics and the oral check-in questions. The [CHEM 427 project list](project-list.md) is up now as a draft and is final on October 15, when the preferences survey opens.
 

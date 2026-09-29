@@ -10,7 +10,7 @@ The six-standard calibration from session 1 is a project in miniature. It has a 
 | Working draft | Sunday, November 22, 11:59 pm | 10% | A notebook that loads, explores and makes a first analysis of your data, and your judgment log |
 | Oral check-in | Tuesday, November 24, in session 16 | 10% | Seven minutes with your mentor, your notebook open |
 | Final submission | Wednesday, December 9, 11:59 pm | 15% | The finished notebook, a one page visual summary and your judgment log |
-| Gallery presentation | Thursday, December 10, in session 20 | required, not scored | Your visual summary at a station, and reviews of two classmates' projects |
+| Gallery presentation | Thursday, December 10, in session 20 | required; missing it costs 4 points of the final submission | Your visual summary at a station, and reviews of two classmates' projects |
 
 Each of you has a project mentor from the instructional team, named on Canvas by October 20. Lucas and Chris are the mentors for both sections, and students are split between them by last name, as for setup help: last names A to K with Lucas, L to Z with Chris. Your mentor reviews your topic, scores your working draft, holds your oral check-in and scores your final submission first. Matt reads every final submission and sets its score.
 
@@ -153,7 +153,7 @@ The final submission is scored on six criteria, 0 to 30 in all.
 
 ## 5. Gallery presentation
 
-In session 20 each of you presents at a station, with your visual summary on your laptop screen. Open every conversation with two sentences, your question and then your main finding, before any method. The session has two rotations: in one you present, and in the other you review two classmates' projects on a short form that records one strength, one limitation and one question you would want answered before trusting the result. The forms go to the presenters. The presentation is required and is not scored separately.
+In session 20 each of you presents at a station, with your visual summary on your laptop screen. Open every conversation with two sentences, your question and then your main finding, before any method. The session has two rotations: in one you present, and in the other you review two classmates' projects on a short form that records one strength, one limitation and one question you would want answered before trusting the result. The forms go to the presenters. The presentation is required and is not scored separately. Missing it costs 4 of the final submission's 30 points, i.e., 2 percentage points of your course grade, and there is no makeup. The deduction is waived if you tell Matt before 1:30 pm that day or give a documented reason within 24 hours.
 
 ## Late submissions
 
