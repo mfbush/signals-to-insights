@@ -12,7 +12,7 @@ The six-standard calibration from session 1 is a project in miniature. It has a 
 | Final submission | Wednesday, December 9, 11:59 pm | 15% | The finished notebook, a one page visual summary and your judgment log |
 | Gallery presentation | Thursday, December 10, in session 20 | required, not scored | Your visual summary at a station, and reviews of two classmates' projects |
 
-Each of you has a project mentor from the instructional team, named on Canvas by October 20. Lucas and Chris are the mentors for both sections, and students are split between them by last name, as for setup help. Your mentor reviews your topic, scores your working draft, holds your oral check-in and scores your final submission first. Matt reads every final submission and sets its score.
+Each of you has a project mentor from the instructional team, named on Canvas by October 20. Lucas and Chris are the mentors for both sections, and students are split between them by last name, as for setup help: last names A to K with Lucas, L to Z with Chris. Your mentor reviews your topic, scores your working draft, holds your oral check-in and scores your final submission first. Matt reads every final submission and sets its score.
 
 ## CHEM 427 and CHEM 527
 
