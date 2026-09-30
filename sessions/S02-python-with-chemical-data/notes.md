@@ -59,7 +59,7 @@ for c, a in zip(concentrations, absorbances):
     print(c, a)
 ```
 
-The first loop in the activity combines these three pieces, `zip`, an `if`, and an f-string for each printed line.
+The activity runs each of these three loops, then a fourth that combines them: `zip` for the pairs, an `if` with an `else`, which holds the lines that run when the condition is `False`, and an f-string for each printed line.
 
 A list comprehension, i.e., a loop written inside square brackets that builds a new list, does the same selection in one line and keeps the result instead of printing it. Read it as the loop above written on one line: the value to keep, then the `for`, then the `if`.
 
