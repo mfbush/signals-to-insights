@@ -95,7 +95,7 @@ The weights will not change. The rubric wording for the activities and the proje
 
 Seventeen sessions have a graded activity: sessions 1 to 15, 17 and 18.
 
-- **Sessions 1 to 3** are scored 0 or 1 for completion. Session 1 is a no-code worksheet; sessions 2 and 3 are notebooks.
+- **Sessions 1 to 3** are scored 3 or 0 for completion. Session 1 is a no-code worksheet; sessions 2 and 3 are notebooks.
 - **Sessions 4 to 15, 17 and 18** are scored 0 to 3. Execution is 0 or 1: the grader restarts the kernel and runs every cell, and the notebook earns the point if it finishes without an error and has no file paths that exist only on your laptop. The judgment cell is 0 to 2.
 
 The judgment cell is one designated markdown cell at the end of each notebook, in two parts. Part (a) answers the session's interpretation question using numbers from your own output. Part (b) is one judgment entry: a suggestion from the assistant that you changed, rejected or verified, and the reason, which has to come from your data. The cell scores 2 when it cites specific values or features from your notebook and connects them to the chemical or statistical reasoning, 1 when it names the right idea without anything specific to your data, and 0 when it is missing or generic. A 2 needs both parts to cite your own data; a cell where only one part does scores 1. Session 3 has an unscored practice judgment cell. The format and a worked example are on the [AI practices page](ai-practices.md).

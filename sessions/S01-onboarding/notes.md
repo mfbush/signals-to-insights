@@ -48,7 +48,7 @@ Every session has the same three parts.
 - **Activity, about 100 minutes.** You work through `activity.ipynb` in the session folder while the instructional team, Matt and the teaching assistants Lucas Narisawa and Chris Weir, circulates.
 - **Third hour, office hour.** Stay to finish or to ask questions.
 
-Before each class, run `git pull` in your `signals-to-insights` folder. From session 4 on each notebook is scored 0 to 3: 1 point for running from top to bottom after a kernel restart, and 0 to 2 for the judgment cell at the end. Sessions 1 to 3 are scored 0 or 1 for completion, so your install cannot cost you points while you set it up.
+Before each class, run `git pull` in your `signals-to-insights` folder. From session 4 on each notebook is scored 0 to 3: 1 point for running from top to bottom after a kernel restart, and 0 to 2 for the judgment cell at the end. Sessions 1 to 3 are scored 3 or 0 for completion, so your install cannot cost you points while you set it up.
 
 ## 4. Working with the assistant
 
