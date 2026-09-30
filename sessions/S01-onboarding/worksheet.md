@@ -1,6 +1,6 @@
 # Session 1 worksheet: What is chemical data?
 
-This worksheet needs no code and no install, so you can read it on GitHub in a browser. Work with the student next to you, and each of you submits your own answers in the Canvas assignment "S1 worksheet" by 11:59 pm on Friday, October 2. It is scored 0 or 1 for completion: 1 point when all six excerpts and both questions in part 4 have an answer. A late submission still earns the point until 11:59 pm on Wednesday, October 7, the night before session 3, and earns 0 after that.
+This worksheet needs no code and no install, so you can read it on GitHub in a browser. Work with the student next to you, and each of you submits your own answers in the Canvas assignment "S1 worksheet" by 11:59 pm on Friday, October 2. It is scored for completion, 3 points or 0: 3 points when all six excerpts and both questions in part 4 have an answer. A late submission still earns the 3 points until 11:59 pm on Wednesday, October 7, the night before session 3, and earns 0 after that.
 
 The worksheet has four parts and takes about 60 minutes: part 1 (5 minutes) sets out the three properties you classify by, part 2 (30 minutes) is the six excerpts, part 3 (10 minutes) compares your answers with another pair, and part 4 (15 minutes) asks two questions about what you found.
 
