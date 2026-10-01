@@ -11,6 +11,8 @@ By the end of this session you can:
 3. Check a parsed spectrum against the file's own consistency fields and say which check catches which reading mistake.
 4. Name what the file records and what it does not, and the question a collaborator could not answer without it.
 
+**AI practice.** *Ask questions as you would a senior colleague.* Before TASK 3 you ask the assistant how it would find the strongest band, and before section 3 how it would load the data block, and you decide whether each answer fits your file's header: the `YUNITS` line for the first, `NPOINTS` and `MAXY` for the second.
+
 ## 1. A data file is a document
 
 Session 2's peak list was a CSV with a header row and two columns, m/z and intensity in counts, and to use it you had to know what the file never said: which instrument produced it and with what settings, who ran it and when, and the threshold that separated a peak from noise, which you chose yourself. A chemical data format is designed to carry that knowledge inside the file. Every well-designed one holds three layers. The measurement values are the first. The acquisition metadata, i.e., the instrument, its settings and the units, is the second, and without it two measurements of the same sample cannot be compared. The provenance, i.e., who measured what, when, and from which sample, is the third, the layer most often missing and hardest to recover. Today's file carries the first two and part of the third, and the activity shows you what each layer is worth.

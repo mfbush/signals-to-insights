@@ -11,6 +11,8 @@ By the end of this session you can:
 3. Log each file the loop cannot read, with its name and error, and show that the rows read plus the files logged equal the inventory.
 4. Choose whether a file that needed a different reader goes into the result, from the concentration, standard deviation and n under both, and write the summary table and report from the same run, with the run as the only input a new run changes.
 
+**AI practice.** *Give it a check it can run.* Before TASK 2 you ask the assistant what the `except` branch should keep, and to run its loop in your notebook and print the files read and logged beside the sequence table's count, and you decide whether those printed counts, not its sentence about them, show that every file is accounted for.
+
 ## 1. An experiment is a folder
 
 A spectrometer writes one file per measurement. Today's real dataset is two days of ferrocyanide standards from the FlareLab instrument at Cambridge: 78 files in two folders, one per day, each file a dark spectrum, a water reference or one of eleven standards from 0.001 to 100 mM, measured at three distance settings. Opened one at a time, 78 files take an afternoon and invite a slip; read by a loop, they take a second and are read the same way every time.

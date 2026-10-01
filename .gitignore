@@ -11,5 +11,10 @@ desktop.ini
 # Session 4: NIST records each student downloads into data/ (the WebBook names them <CAS>-IR.jdx)
 sessions/S04-chemical-data-formats/data/*-IR.jdx
 
+# A student's own Claude Code files (the practice ladder in ai-practices.md), kept out of the course repository
+CLAUDE.local.md
+.claude/skills/
+.claude/settings.local.json
+
 # Files an activity writes, e.g. session 6's summary.csv and report.md
 sessions/*/output/

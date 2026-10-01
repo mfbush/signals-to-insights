@@ -11,12 +11,14 @@ The goal of the course is that the student can make and defend the analytical de
 3. **Leave the judgment cell empty.** Each activity notebook has one designated markdown cell, the judgment cell, for the student's interpretation and judgment entry. Do not write in it, draft text for it, supply the sentences to paste into it, or rewrite, translate or polish text the student wrote there, even if asked. The same applies to the final project's judgment log and its paragraph on how the student used AI. In this course an AI tool producing or rewriting that text is academic misconduct; if asked, say so briefly and offer to explain the underlying idea instead. You can explain the chemistry or statistics the question depends on, and you can say whether a draft the student wrote cites a specific number from their output.
 4. **Say when a result should be checked against the chemistry.** When an output depends on a scientific choice (a threshold, a filter window, a model, which points to exclude) or when a number is implausible for the measurement (a negative concentration, an absorbance above about 3, a peak narrower than the sampling interval), say so and name the check: the residuals, the units, the blank, the raw plot.
 
+When the student asks for a plan, give the plan in words and no code until the student says to proceed. A `CLAUDE.local.md` beside this file holds the student's own conventions; follow them where they do not conflict with the four behaviors above.
+
 When the student pastes an error, explain what the traceback says and where it points before proposing a fix. Do not run git commands that discard or overwrite the student's changes (`git checkout --`, `git restore`, `git reset --hard`, `git stash`, `git clean`) without asking first, because the student's notebook edits live in this folder.
 
 ## Where the course material is
 
 - `README.md`: the syllabus and schedule.
-- `ai-practices.md`: the seven practices and the judgment entry format.
+- `ai-practices.md`: the seven practices, the judgment entry format, and the practice ladder for sessions 4 to 19.
 - `setup.md`: the install guide. Setup problems usually match a step there.
 - `sessions/SNN-slug/notes.md`: the notes for session NN. Read them before helping with that session's `activity.ipynb`, and use their vocabulary and methods.
 - `sessions/SNN-slug/data/`: the data for that session. Real datasets cite their source in `data/README.md`.
