@@ -46,25 +46,25 @@ The dates on this page, the topics of sessions 1 to 3 and the grading weights ar
 | 1 | Thu Oct 1 | Chemical measurements, the course, and the tools |
 | 2 | Tue Oct 6 | Python essentials with chemical data |
 | 3 | Thu Oct 8 | Reproducible practice: environments, updates, notebook hygiene |
-| 4 | Tue Oct 13 | Chemical data, formats, and structures. Every laptop must work by today |
-| 5 | Thu Oct 15 | Tidy data and the sample table |
-| 6 | Tue Oct 20 | Batch file handling and automated reporting |
-| 7 | Thu Oct 22 | Visualization for chemical measurements |
-| 8 | Tue Oct 27 | Noise in chemical measurements |
-| 9 | Thu Oct 29 | Experimental design and statistical inference |
+| 4 | Tue Oct 13 | Chemical data, formats, and structures: does this spectrum match its reference? Every laptop must work by today |
+| 5 | Thu Oct 15 | Tidy data and the sample table: how many water systems are over the PFOA limit? |
+| 6 | Tue Oct 20 | Batch file handling and automated reporting: which waters need iron treatment? |
+| 7 | Thu Oct 22 | Visualization for chemical measurements: which bin does this plastic go in? |
+| 8 | Tue Oct 27 | Noise in chemical measurements: can this lead result be reported as a number? |
+| 9 | Thu Oct 29 | Experimental design and statistical inference: did Flint's water exceed the lead action level? |
 | none | Sun Nov 1 | CHEM 427 project preferences due |
-| 10 | Tue Nov 3 | Fourier analysis |
-| 11 | Thu Nov 5 | Filtering, smoothing, baseline correction |
+| 10 | Tue Nov 3 | Fourier analysis: is the microscope's scale calibrated? |
+| 11 | Thu Nov 5 | Filtering, smoothing, baseline correction: is this impurity above the reporting threshold? |
 | none | Sun Nov 8 | Project topic declaration due |
-| 12 | Tue Nov 10 | Peak detection and feature extraction |
-| 13 | Thu Nov 12 | Curve fitting |
-| 14 | Tue Nov 17 | Uncertainty and model selection |
-| 15 | Thu Nov 19 | Principal component analysis |
+| 12 | Tue Nov 10 | Peak detection and feature extraction: must this impurity be identified? |
+| 13 | Thu Nov 12 | Curve fitting: when does the carbon filter need changing? |
+| 14 | Tue Nov 17 | Uncertainty and model selection: does recess move indoors? |
+| 15 | Thu Nov 19 | Principal component analysis: is this puree the fruit on the label? |
 | none | Sun Nov 22 | Project working draft and judgment log due |
 | 16 | Tue Nov 24 | Project work session 1, with oral check-ins |
 | none | Thu Nov 26 | Thanksgiving, no class |
-| 17 | Tue Dec 1 | Calibration and multivariate models |
-| 18 | Thu Dec 3 | Predictive models and their evaluation |
+| 17 | Tue Dec 1 | Calibration and multivariate models: does this diesel meet the cetane specification? |
+| 18 | Thu Dec 3 | Predictive models and their evaluation: which tablets does the inspector reject? |
 | 19 | Tue Dec 8 | Project work session 2, opening on responsible data science, with second and makeup check-ins |
 | none | Wed Dec 9 | Final notebook, visual summary and log due |
 | 20 | Thu Dec 10 | Project presentations in a gallery format |
