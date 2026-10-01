@@ -44,13 +44,23 @@ Writing the fit takes one line of Python. Seeing that it is wrong for this spect
 
 Every session has the same three parts.
 
-- **Opening, 20 minutes.** Matt introduces the measurement and the method for the day.
+- **Opening, 20 minutes.** Matt introduces the measurement and the method for the day. Today's opening runs about 35 minutes.
 - **Activity, about 100 minutes.** You work through `activity.ipynb` in the session folder while the instructional team, Matt and the teaching assistants Lucas Narisawa and Chris Weir, circulates.
 - **Third hour, office hour.** Stay to finish or to ask questions.
 
 Before each class, run `git pull` in your `signals-to-insights` folder. From session 4 on each notebook is scored 0 to 3: 1 point for running from top to bottom after a kernel restart, and 0 to 2 for the judgment cell at the end. Sessions 1 to 3 are scored 3 or 0 for completion, so your install cannot cost you points while you set it up.
 
-## 4. Working with the assistant
+## 4. Why the course uses an AI assistant from today
+
+Matt has written software for chemical measurements since the early 2000s, and for three years after ChatGPT went public in November 2022 he saw little value in it next to his own expertise. By early 2026 he did most of his coding with an AI agent. In one case, a trainee and he spent about 18 months trying to bring a high-speed digitizer with on-board processing into the lab's measurements with traditional practices, without headway. With an AI-assisted workflow it was online in under a month.
+
+He expects the most successful chemists of the next 20 years to have three core competencies: choosing important questions, collaborating with AIs to answer them, and checking their answers. This course practices all three on chemical measurements, and it grades the third.
+
+The risk is to your learning. A study that followed 26,811 secondary students in China found that AI raised homework scores by 18% and cut completion time by 30%, but lowered monthly exam scores by 20% within six months and entrance exam scores by 18 to 24% after about two years ([Strömberg, Lei and Wu, CEPR Discussion Paper 21577, 2026](https://cepr.org/publications/dp21577)). About 80% of the students using AI showed signs of outsourcing their homework. Note that those students were younger than you and that the study was observational, not a randomized trial.
+
+To make the assistant add to what you learn, ask why it wrote each line the way it did, ask for explanations aimed at what you already know, try a step yourself before you compare it with the assistant's version, and check every result against your data.
+
+## 5. Working with the assistant
 
 Claude Code can write most of the code an activity asks for. It cannot tell you whether the 25 µM standard belongs in the fit, because it has never seen your instrument. Four of the seven rules in `ai-practices.md` follow from that and decide how your work is graded:
 
@@ -61,7 +71,7 @@ Claude Code can write most of the code an activity asks for. It cannot tell you 
 
 The course folder's `CLAUDE.md` asks Claude Code to explain before it writes and to leave the judgment cell empty. It guides the assistant and enforces nothing.
 
-## 5. Getting set up
+## 6. Getting set up
 
 `setup.md` installs git, uv, VS Code, and the course repository, connects your Claude Pro account, and ends with `setup-check.ipynb`, which prints `Setup check passed`. It takes about 45 minutes, and some laptops take all three onboarding sessions.
 
@@ -72,7 +82,7 @@ The course folder's `CLAUDE.md` asks Claude Code to explain before it writes and
 
 When something fails, copy the full error text into the setup status survey on Canvas, because the exact text is how the teaching assistants find the fix.
 
-## 6. Today
+## 7. Today
 
 Everyone does `worksheet.md`, the session 1 submission. It needs no code, takes about 60 minutes, and is due on Canvas by 11:59 pm on Friday, October 2.
 
