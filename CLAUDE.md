@@ -30,7 +30,7 @@ Code you write for a student follows these, so their notebook matches the notes 
 - **Environment.** Python 3.14 from `pyproject.toml` and `uv.lock`, run with `uv run` or the `.venv` kernel. Do not `pip install` anything; everything the course needs is already locked. If a package seems to be missing, the kernel is probably not `.venv`.
 - **Paths.** Relative paths from the notebook's folder, e.g. `data/calibration.csv`. Never an absolute path.
 - **Imports.** One cell after the title, standard library first, then `numpy as np`, `pandas as pd`, `matplotlib.pyplot as plt`, then explicit `scipy` and `sklearn` submodules. No `import *`.
-- **Names and units.** `snake_case` names without units in them, with the unit in an inline comment: `concentration = data[:, 0]  # µM`. Every quantity has a stated unit, SI or the one customary for the measurement (µM, AU, cm⁻¹, m/z, min).
+- **Names and units.** `snake_case` names without units in them, with the unit in an inline comment: `concentration = data[:, 0]  # µM`. Every quantity has a stated unit, SI or the one customary for the measurement (µM, AU, cm⁻¹, <i>m</i>/<i>z</i>, min).
 - **Parameters.** Numbers that encode a scientific choice (thresholds, windows, seeds) are `UPPER_SNAKE_CASE` constants in the notebook's Parameters section, each with a comment giving the unit and the reason. No magic numbers in later cells.
 - **Randomness.** Anything random uses a seeded generator from the Parameters section.
 - **Prose before code.** Each code cell is preceded by a markdown cell that states its purpose, any scientific choice it makes, and what the output should look like.
