@@ -1,6 +1,6 @@
 # Session 6: Batch file handling and automated reporting
 
-Tuesday, October 20. The first session whose product is a set of files: a summary table and a report, written by code from a folder of spectra.
+Tuesday, October 20. This is the first session whose product is a set of files rather than a number or a plot. Your code reads every spectrum in a folder and writes a summary table and a short report from them.
 
 ## Learning objectives
 
@@ -11,11 +11,11 @@ By the end of this session you can:
 3. Log each file the loop cannot read, with its name and error, and show that the rows read plus the files logged equal the inventory.
 4. Choose whether a file that needed a different reader goes into the result, from the concentration, standard deviation and n under both, and write the summary table and report from the same run, with the run as the only input a new run changes.
 
-**AI practice.** *Give it a check it can run.* Before TASK 2 you ask the assistant what the `except` branch should keep, and to run its loop in your notebook and print the files read and logged beside the sequence table's count, and you decide whether those printed counts, not its sentence about them, show that every file is accounted for.
+**AI practice.** *Give the assistant a check to run.* Before TASK 2 you ask the assistant what the `except` branch should keep, and to run its loop in your notebook and print the files read and logged beside the sequence table's count, and you decide whether those printed counts, not its sentence about them, show that every file is accounted for.
 
 ## 1. An experiment is a folder
 
-A spectrometer writes one file per measurement. Today's real dataset is two days of ferrocyanide standards from the FlareLab instrument at Cambridge: 78 files in two folders, one per day, each file a dark spectrum, a water reference or one of eleven standards from 0.001 to 100 mM, measured at three distance settings. Opened one at a time, 78 files take an afternoon and invite a slip; read by a loop, they take a second and are read the same way every time.
+A spectrometer writes one file per measurement. Today's real dataset is two days of ferrocyanide standards from the FlareLab instrument at Cambridge: 78 files in two folders, one per day, each file a dark spectrum, a water reference or one of eleven standards from 0.001 to 100 mM, measured at three distance settings, 50, 200 and 550 mm, a setting of the FlareLab instrument recorded in millimeters. Opened one at a time, 78 files take an afternoon and invite a slip; read by a loop, they take a second and are read the same way every time.
 
 `Path` from `pathlib` is a location that knows its own parts. `path.name` is the file name, `path.stem` the name without its extension, `path.parent.name` the folder it sits in. `DATA_DIR.glob("*.txt")` lists the files in one folder whose names match the pattern, where `*` stands for any run of characters, and `rglob` does the same in every folder below. Today `glob` returns 0 files, because the spectra are one level down, and `rglob` returns 78. A pattern that matches nothing is not an error. It returns an empty list, a loop over it runs zero times, and every later cell runs on nothing without complaint. Wrap the result in `sorted`, because the file system's order differs between a Windows laptop and a Mac, and a report whose row order depends on the machine cannot be compared with anyone else's.
 
@@ -25,13 +25,13 @@ The inventory is a table with one row per file, built from the path alone, befor
 
 The laboratory kept its own list of what it measured, the parameter table: 213 rows, one per ferrocyanide file over four days, with the concentration of each standard. Keep the two days in the folder, 78 rows, and compare the table with the inventory in both directions, by count and by name. Make the comparison before a spectrum is read. The table is also where the concentration lives, since the file name carries only the version, `v5`, and `merge` on the file name attaches it.
 
-## 3. One function, every file
+## 3. One function reads every file
 
 Write the reading once, as a function, and call it on every file. A Flame export opens with a header of instrument settings and then the marker `>>>>>Begin Spectral Data<<<<<`, so `read_flame` finds that line, as session 4 found the end of a JCAMP header, and hands the lines after it to `np.loadtxt`. `counts_at(path, wavelength_nm)` calls it and returns the counts at one wavelength with `np.interp`. The loop calls `counts_at` on every path in the inventory and appends `{"file": ..., "counts": ...}` to a list, and one `pd.DataFrame` call makes the table.
 
-Absorbance needs three spectra from the same day and setting: A = -log10((S - D) / (R - D)), i.e., minus the base 10 logarithm of the standard's counts over the water reference's counts, each with the dark counts D subtracted. A `merge` on day and distance setting attaches the matching dark and reference counts to each of the 66 standards.
+Absorbance needs three spectra from the same day and setting: A = -log10((S - D) / (R - D)), i.e., minus the base 10 logarithm of the standard's counts over the water reference's counts, each with the dark counts D subtracted. A `merge` on day and distance setting attaches the matching dark and reference counts to each of the 66 standards. The three settings' points then fall on one line, because absorbance is a ratio of counts.
 
-The worked calculation. At 360 nm, the 12 day 1 standards from 0.5 to 10 mM give a slope m = 0.09168 AU per mM, an intercept b = 0.00877 AU and R^2 = 0.99926. Below 0.5 mM the absorbance is within 0.01 AU of zero, and at 50 and 100 mM it stops near 1.8 AU, so those standards are outside the calibration. Day 2's 1 mM standard at 50 mm reads A = 0.0963 AU. Its concentration is c = (A - b) / m, i.e., its absorbance less the intercept, divided by the slope: (0.0963 - 0.00877) / 0.09168 = 0.955 mM, a recovery of 95.5% of the 1 mM the laboratory made up. Over the three settings the day 2 standards recover at 94.5% for 1 mM, 112.8% for 5 mM, 109.0% for 10 mM, and 161.1% for 0.5 mM, the one level outside 85 to 115%, at every setting. The count arithmetic behind those recoveries: 78 files found, 78 in the parameter table, 78 read, 0 not read.
+The worked calculation. At 360 nm, the 12 day 1 standards from 0.5 to 10 mM give a slope m = 0.09168 AU per mM, an intercept b = 0.00877 AU and R^2 = 0.99926. Below 0.5 mM the absorbance is within 0.01 AU of zero, and at 50 and 100 mM it stops near 1.8 AU, where almost no light at 360 nm reaches the detector, so those standards are outside the calibration. Day 2's 1 mM standard at 50 mm reads A = 0.0963 AU. Its concentration is c = (A - b) / m, i.e., its absorbance less the intercept, divided by the slope: (0.0963 - 0.00877) / 0.09168 = 0.955 mM, a recovery of 95.5% of the 1 mM the laboratory made up. Over the three settings the day 2 standards recover at 94.5% for 1 mM, 112.8% for 5 mM, 109.0% for 10 mM, and 161.1% for 0.5 mM, the one level outside 85 to 115%, at every setting. A high reading that repeats at every setting points to the day 2 0.5 mM solution, not to one measurement, and the report shows it only because every file was counted and read. The count arithmetic behind those recoveries: 78 files found, 78 in the parameter table, 78 read, 0 not read.
 
 ## 4. A silent gap is worse than a crash
 
@@ -48,7 +48,7 @@ for path in run_paths:
 
 What goes in the `except` block is the decision. `continue` or `pass` keeps nothing: the loop finishes, the table has one row fewer, and every number after it is computed on the files that happened to read, with nothing to say that one is missing. Appending `{"file": name, "error": str(err)}` to a list of failures keeps the evidence, and the report can print it. Either way the loop finishes, so the check is not whether it ran but whether it accounted for everything: the rows read plus the files logged must equal the count in the sequence table. With 16 files in a run and one that will not read, that is 15 + 1 = 16. With `continue` it is 15 + 0, and in the counts the one missing file shows only in that sum.
 
-## 5. The report and the one input
+## 5. The report, with the run name as its only input
 
 The last cells write two files to `output/`: the summary table with `to_csv`, and a short report built line by line with f-strings and written with `write_text`. `OUTPUT_DIR.mkdir(exist_ok=True)` makes the folder if it is missing. Both files are overwritten on every run, and the repository ignores `output/`, so `git pull` never meets your report. Every value in the report comes from a variable, including the file counts on its first line, so setting `RUN` to another run writes that run's report with no other change.
 

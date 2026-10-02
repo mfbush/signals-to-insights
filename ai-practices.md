@@ -62,10 +62,10 @@ From session 4, each session names one way of working with the assistant, in a l
 |---|---|
 | 4 | Ask questions as you would a senior colleague |
 | 5 | Specific prompts |
-| 6 | Give it a check it can run |
+| 6 | Give the assistant a check to run |
 | 7 | Explore and plan before code |
 | 8 | Correct early, and clear the context |
-| 9 | Give it a check it can run, reused |
+| 9 | Give the assistant a check to run, reused |
 | 10 | Keep a CLAUDE.md |
 | 11 | Explore and plan before code, reused |
 | 12 | A skill for a repeated step |
@@ -74,7 +74,7 @@ From session 4, each session names one way of working with the assistant, in a l
 | 15 | A fresh-context review |
 | 16 | A skill, on your project |
 | 17 | Keep a CLAUDE.md, reused |
-| 18 | Give it a check it can run, reused |
+| 18 | Give the assistant a check to run, reused |
 | 19 | A fresh-context review, on your project |
 
 The examples below are for the Claude Code extension in VS Code. The practices are what matters, and they hold if a button moves in a later release.
@@ -83,7 +83,7 @@ The examples below are for the Claude Code extension in VS Code. The practices a
 
 **Specific prompts.** This extends practice 5. A prompt that names the file, the column, the constraint and what done looks like gets code you can check, whereas "make these numeric" gets code that merely runs. Compare `My PFAS columns hold strings like "< 0.004". How do I make them numeric?` with a prompt that names the table, says that a below-limit result becomes `NaN`, and asks for a count that shows it did. To point at a few lines of a file, select them in the editor and press Alt and K (Option and K on a Mac), which puts a reference to those lines in your prompt.
 
-**Give it a check it can run.** This extends practice 3. "The loop read every file" is a claim. A printed count of files read and files logged, next to the number of rows in the sequence table, is evidence. Ask the assistant to run the check, then read the output, not its summary of the output. In a notebook the assistant runs code by adding a cell at the end of the notebook and asking you to click **Execute** or **Cancel**. Read what it printed, then delete that cell, so that your notebook still ends with the software environment cell when you run all.
+**Give the assistant a check to run.** This extends practice 3. "The loop read every file" is a claim. A printed count of files read and files logged, next to the number of rows in the sequence table, is evidence. Ask the assistant to run the check, then read the output, not its summary of the output. In a notebook the assistant runs code by adding a cell at the end of the notebook and asking you to click **Execute** or **Cancel**. Read what it printed, then delete that cell, so that your notebook still ends with the software environment cell when you run all.
 
 **Explore and plan before code.** For a figure or an analysis with several choices in it, get the plan in words first. Click the mode indicator at the bottom of the prompt box and choose **Plan**, or type `/plan` followed by the task. The plan opens as a document you can comment on. Approve it when the panels, axes and choices are the ones your data need, and only then let the assistant write code. The course's `CLAUDE.md` asks it to give a plan in words, without code, until you say to proceed.
 
