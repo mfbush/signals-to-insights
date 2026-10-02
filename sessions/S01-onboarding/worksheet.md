@@ -6,15 +6,15 @@ The worksheet has four parts and takes about 60 minutes: part 1 (5 minutes) sets
 
 ## Part 1. Three properties of a data file
 
-An instrument never records the chemical quantity you want. A chromatograph records a detector signal many times a second, and the amount of each compound is inferred afterward from the area under a peak. A mass spectrometer records how many ions arrive at each mass-to-charge ratio, i.e., m/z, and the identity of a molecule is inferred from which m/z values appear. Each instrument converts the sample into a signal in a fixed sequence of steps, and the file it writes keeps some information and has already lost the rest.
+An instrument never records the chemical quantity you want. A chromatograph records a detector signal many times a second, and the amount of each compound is inferred afterward from the area under a peak. A mass spectrometer records how many ions arrive at each mass-to-charge ratio, i.e., <i>m</i>/<i>z</i>, and the identity of a molecule is inferred from which <i>m</i>/<i>z</i> values appear. Each instrument converts the sample into a signal in a fixed sequence of steps, and the file it writes keeps some information and has already lost the rest.
 
 To know what you can do with a file, you need three properties.
 
-1. **Dimensionality**, i.e., how many axes the signal depends on. A signal that depends only on time or only on m/z is one-dimensional. An image with a full spectrum at every pixel depends on x position, y position, and wavelength or m/z, so it is three-dimensional, which is called a data cube.
-2. **The physical meaning of each axis**, with its unit: time, wavelength, m/z, or position.
+1. **Dimensionality**, i.e., how many axes the signal depends on. A signal that depends only on time or only on <i>m</i>/<i>z</i> is one-dimensional. An image with a full spectrum at every pixel depends on x position, y position, and wavelength or <i>m</i>/<i>z</i>, so it is three-dimensional, which is called a data cube.
+2. **The physical meaning of each axis**, with its unit: time, wavelength, <i>m</i>/<i>z</i>, or position.
 3. **The chemical quantity the signal encodes**: how much of a compound is present, which compound it is, where it is in the sample, or a combination of these.
 
-Most of the files you will meet are one of three kinds: a time series (signal against time), a spectrum (signal against wavelength, frequency, or m/z), or a data cube. The methods later in the course depend on which kind you have. A smoothing function written for a spectrum and applied along the wrong axis of a data cube runs without an error and averages neighboring pixels instead of neighboring wavelengths.
+Most of the files you will meet are one of three kinds: a time series (signal against time), a spectrum (signal against wavelength, frequency, or <i>m</i>/<i>z</i>), or a data cube. The methods later in the course depend on which kind you have. A smoothing function written for a spectrum and applied along the wrong axis of a data cube runs without an error and averages neighboring pixels instead of neighboring wavelengths.
 
 ## Part 2. Six excerpts
 

@@ -69,7 +69,7 @@ in_range = [a for a in absorbances if a <= LINEAR_LIMIT]
 
 The result, `in_range`, is a list of the five absorbances at or below 1.20 AU.
 
-The same shape filters a mass spectrum. The activity's peak list is a simulated electrospray spectrum of a caffeine standard, 28 peaks stored as (m/z, intensity) pairs. Each pair is a tuple, i.e., values in parentheses that are fixed once made, and the comprehension unpacks it into two names the way the `zip` loop does. Keep the peaks at or above 5% of the base peak, the most intense peak in the spectrum, and five remain, all caffeine ions: protonated caffeine at m/z 195.088, its carbon-13 isotope peak 1.003 higher, the sodium adduct, a fragment and the protonated dimer. Lower the threshold to 1% and twelve remain.
+The same shape filters a mass spectrum. The activity's peak list is a simulated electrospray spectrum of a caffeine standard, 28 peaks stored as (<i>m</i>/<i>z</i>, intensity) pairs. Each pair is a tuple, i.e., values in parentheses that are fixed once made, and the comprehension unpacks it into two names the way the `zip` loop does. Keep the peaks at or above 5% of the base peak, the most intense peak in the spectrum, and five remain, all caffeine ions: protonated caffeine at <i>m</i>/<i>z</i> 195.088, its carbon-13 isotope peak 1.003 higher, the sodium adduct, a fragment and the protonated dimer. Lower the threshold to 1% and twelve remain.
 
 Which list is right depends on the question, not on the code. That is why `THRESHOLD` is a named constant in the Parameters cell, i.e., the cell near the top of the notebook where every chosen number is set once, with its reason in a comment.
 

@@ -13,7 +13,7 @@ By the end of this session you can:
 
 ## 1. From a signal to a concentration
 
-An instrument never reports the quantity you want. A spectrophotometer reports absorbance, a chromatograph reports a detector signal against time, and a mass spectrometer reports ion counts against mass-to-charge ratio, i.e., m/z. The link between signal and amount comes from measuring standards of known concentration, which is the calibration you have done in quantitative analysis.
+An instrument never reports the quantity you want. A spectrophotometer reports absorbance, a chromatograph reports a detector signal against time, and a mass spectrometer reports ion counts against mass-to-charge ratio, i.e., <i>m</i>/<i>z</i>. The link between signal and amount comes from measuring standards of known concentration, which is the calibration you have done in quantitative analysis.
 
 For absorbance the link is the Beer-Lambert law,
 
@@ -30,7 +30,7 @@ Two more figures of merit from your analytical chemistry courses recur all term.
 - **Detection limit** is the concentration whose signal exceeds the blank by three standard deviations of the blank, $c_{\mathrm{LOD}} = 3 s_{\mathrm{bl}}/m$, i.e., three times the blank's standard deviation divided by the sensitivity. The simulated spectrophotometer behind today's file has a blank standard deviation of 0.0015 AU, so its detection limit is 0.076 µM.
 - **Linear range** is the span of concentration over which $m$ is constant. Above 1.2 AU this spectrophotometer reads low, as real ones do once stray light is a measurable fraction of the transmitted light.
 
-A chromatogram carries amount in a peak area and identity in a retention time, whereas a mass spectrum carries identity in m/z. The worksheet asks you to find these quantities in six files.
+A chromatogram carries amount in a peak area and identity in a retention time, whereas a mass spectrum carries identity in <i>m</i>/<i>z</i>. The worksheet asks you to find these quantities in six files.
 
 ## 2. What the course adds to your chemistry courses
 

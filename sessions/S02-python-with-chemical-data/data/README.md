@@ -15,14 +15,14 @@ The values follow Beer-Lambert behavior with a slope of 0.0597 AU/µM, a respons
 
 ## ms_peaks.csv
 
-A centroided peak list, i.e., one row per peak as an instrument's peak-picking step exports it, from a positive-mode electrospray mass spectrum of a caffeine standard, 28 peaks from m/z 130 to 446, sorted by m/z.
+A centroided peak list, i.e., one row per peak as an instrument's peak-picking step exports it, from a positive-mode electrospray mass spectrum of a caffeine standard, 28 peaks from <i>m</i>/<i>z</i> 130 to 446, sorted by <i>m</i>/<i>z</i>.
 
 | Column | Unit | Meaning |
 |---|---|---|
-| `mz` | m/z | mass-to-charge ratio of the peak, to 0.0001 |
+| `mz` | <i>m</i>/<i>z</i> | mass-to-charge ratio of the peak, to 0.0001 |
 | `intensity_counts` | counts | peak intensity |
 
-The peaks are protonated caffeine at m/z 195.088 with its isotope peaks, the sodium adduct, a fragment at m/z 138.066, the proton- and sodium-bound dimers, four plasticizer ions of the kind found in electrospray backgrounds, and 16 low-intensity noise peaks. Each m/z carries a mass error with a standard deviation of 1.5 ppm and each intensity a 3% scatter.
+The peaks are protonated caffeine at <i>m</i>/<i>z</i> 195.088 with its isotope peaks, the sodium adduct, a fragment at <i>m</i>/<i>z</i> 138.066, the proton- and sodium-bound dimers, four plasticizer ions of the kind found in electrospray backgrounds, and 16 low-intensity noise peaks. Each <i>m</i>/<i>z</i> carries a mass error with a standard deviation of 1.5 ppm and each intensity a 3% scatter.
 
 ## arrhenius_rates.csv
 
