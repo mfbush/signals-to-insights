@@ -19,7 +19,7 @@ One row per sample, i.e., one sample point on one collection date, in the shape 
 | `sample_id` | four facts joined by underscores: the public water system id (PWSID), the sample point id, the collection date as YYYY-MM-DD, and the sampling event, `SE1` |
 | `PFBS`, `PFHxA`, `PFHxS`, `PFOA`, `PFOS`, `PFPeA` | the result in µg/L as the laboratory reported it, for example `0.0040`, or `< 0.004` for a result below the reporting limit |
 
-Two rules were applied. A sample point that appears under two facility ids on the same date is kept once, with the later row's results: 3,066 samples nationally, about 4% of the first-event results for these six PFAS, and in 393 of them the two rows' results differ. A sample with fewer than six results in the event, which happens when a point was sampled on two dates with the compounds split between them, is left out: 45 samples nationally, in 13 states. So every cell of a results file is a value or a below-limit code.
+Two rules were applied. A sample point that appears under two facility ids on the same date is kept once, with the later row's results: 3,066 results nationally (a sample and compound reported on two rows), the second rows being about 4% of the first-event results for these six PFAS, and in 393 of the 3,066 the two rows' values differ. A sample with fewer than six results in the event, which happens when a point was sampled on two dates with the compounds split between them, is left out: 45 samples nationally, in 13 states. So every cell of a results file is a value or a below-limit code.
 
 ### The sample table, `states/<ST>_samples.csv`
 
@@ -31,7 +31,7 @@ The sample table: one row per sample point.
 | `system_name` | the system's name as the EPA lists it |
 | `size_category` | `L` for a system serving more than 10,000 people, `S` for a smaller one |
 | `facility_id` | the EPA id of the treatment facility the sample point belongs to; for a point reported under two facilities, the later one |
-| `facility_water_type` | `GW` groundwater, `SW` surface water, `MX` mixed, `GU` groundwater under the influence of surface water; a sample point reported under two types (64 of 25,000 nationally) carries the more common one |
+| `facility_water_type` | `GW` groundwater, `SW` surface water, `MX` mixed, `GU` groundwater under the influence of surface water; a sample point reported under two types (64 of 25,065 nationally) carries the more common one |
 | `sample_point_id` | the sample point id, the second key; read it as text, since some are all digits with leading zeros |
 | `epa_region` | the EPA region number |
 | `state` | the two-letter code |
