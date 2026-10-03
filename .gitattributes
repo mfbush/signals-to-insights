@@ -2,3 +2,6 @@
 
 # Session 6: FlareLab spectra kept byte for byte as published (mixed LF, CR, CRLF endings)
 sessions/S06-batch-reporting/data/flarelab/** -text
+
+# Session 8: the Zenodo count trace kept byte for byte as published (CRLF endings)
+sessions/S08-noise/data/ag_trace_1ms.csv -text

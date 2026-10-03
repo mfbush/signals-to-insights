@@ -49,7 +49,7 @@ Within a session activity, use what the course has introduced by that session, s
 | 5 | `pandas`: `read_csv` (with `dtype` for identifier columns), `DataFrame`, boolean indexing, `.loc` assignment, `astype`, `.isna()`, `.fillna(0)` as a counterfactual check, `groupby` (with `.mean()`, `.sum()`, `.size()`, `.any()`), `merge`, `melt`, the `.str` accessor for `split` and `startswith`, tidy data; `ax.bar` |
 | 6 | `pathlib.Path` (`glob`, `rglob`, `sorted` on their result, `.name`, `.stem`, `.parent.name`, `read_text`, `write_text`, `mkdir(exist_ok=True)`), looping over files into a list of dictionaries, `set(a) - set(b)` to compare two lists of names, `try` and `except Exception as err`, f-strings for reports; `np.interp`; pandas `read_csv(skiprows=)`, `to_csv`, `merge` with `left_on` and `right_on`, `rename(columns=)`, `sort_values(ignore_index=True)`, `.str.split(...).str[i]`, `.iloc[0]`, `groupby(...).std()`; `np.std(ddof=1)`; `ax.set_xscale("log")` |
 | 7 | full `matplotlib`: subplots, colormaps, twin axes, `GridSpec` |
-| 8 | `numpy.random` with a seed, `scipy.signal` basics |
+| 8 | `numpy.random` with a seed (`default_rng`, `rng.poisson`); a regulatory constant such as Student's t from a table given in Parameters, not computed; `reshape(n, k).sum(axis=1)` to sum a trace into windows; pandas `.unique()`, `.to_numpy()`, `set_index`, `to_string(index=False)`; `ax.set_yscale("log")`, `ax.axhline`, `ax.set_ylim`. S8 uses no `scipy.signal`; its filters come in session 11 |
 | 9 | `scipy.stats`: t-tests, ANOVA, confidence intervals |
 | 10 | `numpy.fft` |
 | 11 | `scipy.signal` filters (Savitzky-Golay, Butterworth), `scipy.ndimage` |
