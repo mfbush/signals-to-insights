@@ -2,6 +2,8 @@
 
 *Matt Bush, Department of Chemistry, University of Washington. CHEM 427/527, Autumn 2026.*
 
+The slides from the opening are in this folder as [Session 1 opening slides (PDF)](slides/S01-opening-slides.pdf) and in the Session 1 module on Canvas.
+
 ## Learning objectives
 
 By the end of this session you can:

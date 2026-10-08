@@ -2,14 +2,16 @@
 """Accessibility checker for CHEM 427/527 course materials.
 
 Checks the mechanical items of the course accessibility checklist on Markdown
-files and on the markdown cells of Jupyter notebooks, then prints the items
-that need a person's judgment as reminders. Exits 1 if any check fails.
+files, on the markdown cells of Jupyter notebooks, and on PDF slide decks, then
+prints the items that need a person's judgment as reminders. Exits 1 if any
+check fails.
 
 The checklist follows the UW Accessible Technology guidance for documents,
 https://www.washington.edu/accesstech/documents/
 
 Usage:
     python tools/a11y_check.py sessions/S01-onboarding
+    python tools/a11y_check.py sessions/S02-python-with-chemical-data/slides/S02-opening-slides.pdf
     python tools/a11y_check.py setup.md ai-practices.md
     python tools/a11y_check.py .                      # whole repository
     python tools/a11y_check.py sessions/S01-onboarding --no-reminders
@@ -253,6 +255,67 @@ def check_markdown_text(text, where, r, math_hits):
         math_hits.append(where(n) + " " + snippet)
 
 
+# ── PDF ───────────────────────────────────────────────────────────────────────
+
+def struct_figures(reader):
+    """[(page, alt)] for each /Figure in the PDF's structure tree; alt is None if missing."""
+    from pypdf.generic import ArrayObject, DictionaryObject
+
+    pages = {pg.indirect_reference.idnum: i for i, pg in enumerate(reader.pages, start=1)}
+    figures = []
+
+    def walk(node, page):
+        node = node.get_object()
+        if isinstance(node, ArrayObject):
+            for kid in node:
+                walk(kid, page)
+            return
+        if not isinstance(node, DictionaryObject):
+            return
+        if "/Pg" in node:
+            page = pages.get(node.raw_get("/Pg").idnum, page)
+        if node.get("/S") == "/Figure":
+            alt = node.get("/Alt")
+            figures.append((page, str(alt).strip() if alt is not None else None))
+        kids = node.get("/K")
+        if kids is not None and not isinstance(kids, int):
+            walk(kids, page)
+
+    walk(reader.trailer["/Root"]["/StructTreeRoot"], None)
+    return figures
+
+
+def check_pdf(path, r, figure_hits):
+    """A slide deck's PDF: tagged, titled, in a language, with text on every page."""
+    try:
+        from pypdf import PdfReader
+    except ImportError:
+        r.fail("file", "pypdf is not installed; run uv sync and check the PDF again")
+        return
+    reader = PdfReader(path)
+    root = reader.trailer["/Root"]
+    mark = root.get("/MarkInfo")
+    if "/StructTreeRoot" not in root or not (mark and mark.get_object().get("/Marked")):
+        r.fail("file", "PDF is not tagged; export it with tags (Chrome: --export-tagged-pdf)")
+    title = (reader.metadata or {}).get("/Title")
+    if not title or not str(title).strip():
+        r.fail("file", "PDF has no title in its document properties")
+    prefs = root.get("/ViewerPreferences")
+    if not (prefs and prefs.get_object().get("/DisplayDocTitle")):
+        r.warn("file", "PDF does not ask viewers to show its title in place of the file name")
+    if not str(root.get("/Lang") or "").strip():
+        r.fail("file", "PDF has no document language (/Lang)")
+    for n, page in enumerate(reader.pages, start=1):
+        if not (page.extract_text() or "").strip():
+            r.fail(f"page {n}", "no extractable text; a page that is only an image cannot be read aloud")
+    if "/StructTreeRoot" in root:
+        for page, alt in struct_figures(reader):
+            if not alt:
+                r.fail(f"page {page}", "figure without alt text")
+            else:
+                figure_hits.append(f"page {page}: {alt[:90]}")
+
+
 # ── Files ─────────────────────────────────────────────────────────────────────
 
 def check_md_file(path, r, math_hits):
@@ -316,7 +379,7 @@ def collect(paths):
         p = Path(p)
         if p.is_dir():
             for f in sorted(p.rglob("*")):
-                if f.suffix in {".md", ".ipynb"} and f.is_file() \
+                if f.suffix in {".md", ".ipynb", ".pdf"} and f.is_file() \
                         and not SKIP_DIRS.intersection(f.relative_to(p).parts):
                     files.append(f)
         elif p.is_file():
@@ -342,12 +405,15 @@ Judgment items the script cannot check. Look at each before publishing:
   - Link text makes sense read alone, out of its sentence.
   - Lists are Markdown lists, not lines that only look like one.
   - Instructions do not rely on position alone ("the button on the right").
+  - In a slide deck PDF, each chart has a text description on its own slide
+    that a student who missed the opening can read: the trend and the numbers
+    the slide's point rests on, not only axis labels.
 """
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("paths", nargs="+", help="Markdown files, notebooks, or folders to search")
+    ap.add_argument("paths", nargs="+", help="Markdown files, notebooks, PDFs, or folders to search")
     ap.add_argument("--no-reminders", action="store_true", help="skip the judgment-item reminders")
     args = ap.parse_args()
 
@@ -356,25 +422,34 @@ def main():
 
     files = collect(args.paths)
     if not files:
-        print("a11y_check: no .md or .ipynb files found", file=sys.stderr)
+        print("a11y_check: no .md, .ipynb or .pdf files found", file=sys.stderr)
         sys.exit(2)
 
     n_fail = 0
-    math_hits = []
+    math_hits, figure_hits = [], []
     for f in files:
         r = Report(f.as_posix())
         hits = []
-        if f.suffix == ".ipynb":
-            check_notebook(f, r, hits)
+        if f.suffix == ".pdf":
+            check_pdf(f, r, hits)
+            figure_hits += [f"{f.as_posix()}, {h}" for h in hits]
         else:
-            check_md_file(f, r, hits)
-        math_hits += [f"{f.as_posix()}, {h}" for h in hits]
+            if f.suffix == ".ipynb":
+                check_notebook(f, r, hits)
+            else:
+                check_md_file(f, r, hits)
+            math_hits += [f"{f.as_posix()}, {h}" for h in hits]
         r.print()
         n_fail += len(r.failures)
 
     if math_hits:
         print("\nMath to check for a text alternative in the surrounding sentence:")
         for h in math_hits:
+            print(f"  {h}")
+
+    if figure_hits:
+        print("\nPDF figures, with the alt text a screen reader announces; check it against the chart:")
+        for h in figure_hits:
             print(f"  {h}")
 
     if not args.no_reminders:
