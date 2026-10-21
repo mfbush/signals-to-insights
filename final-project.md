@@ -54,7 +54,7 @@ A finished project takes the first analysis from your working draft, adds one mo
 
 A finished project does not need, and is not scored higher for, a second dataset, a method the course did not teach, or a written paper. The difference between a 4 and a 5 is one specific addition. On the final's Method criterion, for example, a 4 states the method, the property of the data that chose it, and an assumption checked with its result. A 5 adds a named alternative run on the same data with a number, such as the residual standard deviation of a linear and a quadratic calibration on your standards.
 
-An example repository made from the template, on course data, will be linked here by Tuesday, November 3.
+The [example project repository](https://github.com/mfbush/signals-to-insights-project-example) was made from the template by the instructional team, on the data of the withdrawn CHEM 427 project 10. It is built to score 4, so it leaves out the one named comparison or check, and its README says what that check would be. Its judgment log is left blank, because you write yours without the assistant.
 
 ## How the written parts are scored
 

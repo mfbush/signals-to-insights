@@ -96,11 +96,19 @@ class Report:
 
 def prose_lines(text):
     """Return [(line_number, line)] with fenced code blocks, inline code and
-    HTML comments blanked out, so checks see only the prose."""
+    HTML comments blanked out, so checks see only the prose. YAML front matter,
+    as in a skill's SKILL.md, is blanked too: its closing --- would read as a
+    setext H2 under the last key."""
     text = HTML_COMMENT_RE.sub(lambda m: "\n" * m.group(0).count("\n"), text)
     out = []
     fence = None
+    front = text.startswith("---\n") or text.startswith("---\r\n")
     for i, line in enumerate(text.splitlines(), start=1):
+        if front:
+            if i > 1 and line.rstrip() in ("---", "..."):
+                front = False
+            out.append((i, ""))
+            continue
         m = FENCE_RE.match(line)
         if fence is None and m:
             fence = m.group(1)[0] * len(m.group(1))
