@@ -1,29 +1,29 @@
 # Session 8: Noise in chemical measurements
 
-Tuesday, October 27. The first session on a real count trace from a mass spectrometer, and on a detection limit that a federal rule defines and a laboratory has to meet.
+Tuesday, October 27. A drinking-water laboratory reports the lead in each home's tap water as a number, or as zero when the result falls below its detection limit. Today you find what sets that limit, from a real ICP-MS count trace and simulated lead measurements.
 
 ## Learning objectives
 
 By the end of this session you can:
 
-1. Show from a measured ICP-MS count trace that counts scatter with a variance close to their mean, that a window four times longer halves the relative noise, and where that stops, with a seeded Poisson simulation beside the measured windows.
-2. Compute the spike MDL and the blank MDL by 40 CFR 136 Appendix B at each integration time, report the greater, and show from your table how far 3 times the blanks' standard deviation falls below it.
-3. Choose an integration time and a background treatment from the MDL each gives, and show by how much each fourfold step lowers the MDL against the halving counting alone would give.
-4. Report each home's lead as a number or as zero by the MDL, and check the answer to your own prompt against these notes before one follow-on.
+1. Show from a measured ICP-MS count trace that ion counts scatter with a variance close to their mean, as a seeded Poisson simulation does. Show that a window four times longer halves the relative noise, and find the window length where that rule stops holding.
+2. Compute the spike method detection limit (MDL) and the blank MDL by 40 CFR 136 Appendix B at each integration time, report the greater, and show from your table how far 3 times the blanks' standard deviation falls below it.
+3. Choose an integration time and a background treatment from the MDL each gives. Show by how much each fourfold step in integration time lowers the MDL, against the halving that counting alone would give.
+4. Report each home's lead as a number or as zero by the MDL. Check an assistant's MDL against Appendix B on t, the blanks' mean, and the greater of two, and decide from the result whether to correct it, restart with a better prompt, or verify one value by hand.
 
-**AI practice.** *Correct early, and clear context.* In TASK 2 you write your own prompt for your lab's detection limits, check the answer against section 3 (t or 3, the blanks' mean, the greater of two), compare with a neighbor, send one follow-on, and record the exchange in two cells you add.
+**AI practice.** *Correct early, and clear context.* In TASK 2 you write your own prompt for your lab's detection limits, compare the answer with a neighbor's, send one follow-on, and record the exchange in two cells you add.
 
 ## 1. A lead result is a number or zero
 
-A drinking-water laboratory measures lead in tap water from homes, and federal rules decide how each result is written down. 40 CFR 141.89 requires the lab to reach a **method detection limit** (MDL) for lead of 0.001 mg/L, which is 1 µg/L, by the procedure in 40 CFR 136 Appendix B, and to report every result below its MDL as zero. A result between the MDL and 5 µg/L, the practical quantitation level, may be reported as measured or as 2.5 µg/L; the notebook reports it as measured. The lab's manager sets how long the instrument counts each reading and how the background is subtracted, and these set the MDL. Set the MDL too low, and results the lab cannot tell from its own blanks go into a home's record as lead. Set it too high, and homes with lead are recorded as zero.
+[40 CFR 141.89](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-141/subpart-I/section-141.89) requires the lab to reach a **method detection limit** (MDL) for lead of 0.001 mg/L, which is 1 µg/L, or 1 part per billion (ppb) as news reports give it, by the procedure in 40 CFR 136 Appendix B, and to report every result below its MDL as zero. A result between the MDL and 5 µg/L may be reported as measured or as 2.5 µg/L, and the notebook reports it as measured. The lab's manager sets how long the instrument counts each reading and how the background is subtracted, and these set the MDL. Set the MDL too low, and results the lab cannot tell from its own blanks go into a home's record as lead. Set it too high, and homes with lead are recorded as zero.
 
-These calls fall near 1 µg/L, a tenth of the 10 µg/L action level that applies from November 2027. The action level is a 90th percentile over many homes, which a call near the MDL moves only when that percentile sits near the MDL; session 9 computes it.
+These calls fall near 1 µg/L, a tenth of the 10 µg/L action level that applies from November 2027, which session 9 computes as a 90th percentile over many homes.
 
 ## 2. Counting ions gives Poisson noise
 
 An ICP-MS turns the lead in a sample into ions and counts them as they reach the detector, so each reading is a whole number. To see what that does to the noise, look at a solution whose concentration does not change. Today's real trace is dissolved silver at 0.1 µg/L, counted in windows of 1 ms for 60.0 s: 59,999 readings with a mean of 2.800 counts.
 
-When ions arrive independently, the counts in a window follow a **Poisson distribution**, whose variance equals its mean. A reading of N counts then carries a standard deviation of √N, and a relative standard deviation of 1/√N, i.e., √N divided by N. The trace's variance over its mean is 1.048, close to 1. Summed into longer windows, its relative standard deviation is 0.612 at 1 ms and 0.166 at 16 ms, close to 1/√N (0.598 and 0.149). A window four times longer holds four times the counts and halves the relative noise.
+When ions arrive independently, the counts in a window follow a **Poisson distribution**, whose variance equals its mean, and this counting noise is called [shot noise](https://en.wikipedia.org/wiki/Shot_noise). A reading of N counts then carries a standard deviation of √N, and a relative standard deviation of 1/√N, i.e., √N divided by N. The trace's variance over its mean is 1.048, close to 1. Summed into longer windows, its relative standard deviation is 0.612 at 1 ms and 0.166 at 16 ms, close to 1/√N (0.598 and 0.149). A window four times longer holds four times the counts and halves the relative noise.
 
 That rule stops near 16 ms. At 1.02 s the trace's relative standard deviation is 0.0247, whereas 1/√N gives 0.0187, and at 4.10 s it is 0.0164 against 0.0093. The extra noise comes from the plasma and the sample introduction, which wander over tens of milliseconds to seconds, and counting longer does not average it away. Seeded Poisson counts with the same means follow 1/√N all the way, so the difference is in the instrument.
 
@@ -37,19 +37,19 @@ The worked calculation uses the notebook's section 1 method study at 0.4 s. The 
 
 Two shortcuts give a lower number. The spike MDL alone, 0.298 µg/L, leaves out the lead the blanks carry. The older rule of 3 times the blanks' standard deviation, which session 1 used, gives 0.417 µg/L here: it uses 3 in place of 3.143 and drops the blanks' mean. A blank's mean above zero is lead that every sample also picked up from its reagents, so a result just above that mean is no evidence of lead from the tap.
 
-## 4. Noise a longer count does not remove
+## 4. Systematic errors versus random noise
 
 A longer integration time lowers only the part of the noise that comes from counting. In the method study the spike MDL falls from 1.306 µg/L at 0.025 s to 0.757 at 0.1 s and 0.298 at 0.4 s, close to the 1/√t that counting alone predicts. At 1.6 s it is 0.281 µg/L, whereas counting alone would give 0.163.
 
 What stops it is noise that is the same however long you count. Each blank and spike picks up its own small amount of lead from the acids in preparation, so the seven differ before any ion is counted, and each reading carries the plasma's slower noise, the floor of section 2. The background also rises through the day, and a blank read in the afternoon carries more of it than one read in the morning. These are **systematic** in a single reading, the same in every count of it, and a longer count measures them more precisely without making them smaller. **Random** noise, such as counting noise, averages away.
 
-Drift can be corrected another way. The run reads a **calibration blank**, clean acid with no lead, before every fourth sample. Treatment A subtracts the background at the start of the day, from the day's calibration line, so every later reading, homes included, carries the drift as apparent lead. Treatment B subtracts the calibration blanks' count rate interpolated to the minute of each reading, so it follows the drift, at the cost of those blank readings, where EPA Method 200.8 asks for one per ten samples. The notebook's section 3 computes both and prints each cost.
+Drift can be corrected another way. The run reads a **calibration blank**, clean acid with no lead, before every fourth sample. Treatment A subtracts the background at the start of the day, from the day's calibration line, so every later reading, homes included, carries the drift as apparent lead. Treatment B subtracts the calibration blanks' count rate interpolated to the minute of each reading, so it follows the drift, at the cost of those blank readings, where EPA Method 200.8 asks for one per ten samples.
 
-The notebook records a result below the MDL as zero, as the rule requires, with a `detected` column beside it. In session 5 a below-limit result became `NaN`, because an analysis of how often a compound occurs asks a different question than a compliance record.
+The notebook records a result below the MDL as zero, as the rule requires, with a `detected` column beside it. Session 5 stored such a result as `NaN`, the form for analysis rather than a compliance record.
 
-## 5. What the MDL does not promise
+## 5. False positives and false negatives at the MDL
 
-The MDL protects against one error, reporting lead in a home whose sample held none, and does not promise that a home with lead is reported as a number. A home whose true lead equals the MDL gives results that scatter around the MDL, so about half of them fall below it and are reported as zero. Currie's **detection limit**, L_D (IUPAC, 1995, [doi:10.1351/pac199567101699](https://doi.org/10.1351/pac199567101699)), is the true concentration detected with high probability, and when the noise is the same near zero it is about twice the critical level that the MDL resembles. A home between the MDL and L_D is often reported as zero, a cost of the rule rather than an error in the arithmetic.
+The MDL limits false positives, results that report lead in a home whose sample held none. Appendix B's t at 99% sets it so that a lead-free sample reads above the MDL about once in a hundred. A home whose true lead equals the MDL gives results that scatter around the MDL, so about half of them fall below it and are reported as zero. Currie's **detection limit**, L_D (IUPAC, 1995, [doi:10.1351/pac199567101699](https://doi.org/10.1351/pac199567101699)), is the true concentration detected with high probability, and when the noise is the same near zero it is about twice the critical level that the MDL resembles. A home between the MDL and L_D is often reported as zero, a cost of the rule rather than an error in the arithmetic.
 
 ## 6. Correct early, and clear context
 
@@ -57,10 +57,10 @@ The assistant answers from what is in its conversation and what it reads in the 
 
 If several things are wrong, or two corrections have not fixed it, clear the conversation rather than send another, because each failed attempt stays in the conversation and pulls the next answer toward it. Then write a better first prompt, one that names this page's section, your variables, the columns and the units. A neighbor's prompt is the quickest source of what yours left out.
 
-To add a cell in VS Code, hover just below a cell and click **+ Markdown** or **+ Code**, or press Esc, then B for a cell below, then M for markdown or Y for code. Shift+Enter runs a cell, and a markdown cell then shows as formatted text. To delete one, press Esc, then D twice. The graders run every cell you add, so a code cell you keep has to run without an error.
+To add a cell in VS Code, hover just below a cell and click **+ Markdown** or **+ Code**, or press Esc, then B for a cell below, then M for markdown or Y for code. Shift+Enter runs a cell and shows a markdown cell as formatted text. To delete one, press Esc, then D twice. The graders run every cell you add, so a code cell you keep has to run without an error.
 
 ## 7. Today
 
-Your lab is assigned on the board, from `lab_01` to `lab_36` in `data/labs/`; set `LAB` in Parameters. Section 1 works through the silver trace and one lab's method study. Section 2 reads your lab (TASK 1), has you prompt the assistant and record the exchange (TASK 2), computes the blank MDL and the greater of the two at each time (TASK 3), and asks you to choose an integration time (TASK 4) and report your 40 homes (TASK 5). Section 3 repeats everything with bracketing calibration blanks.
+Your lab, from `lab_01` to `lab_36`, is assigned on the board; set `LAB` in Parameters. Section 1 works through the silver trace and one lab's method study. Section 2 reads your lab (TASK 1), has you prompt the assistant and record the exchange (TASK 2), computes the blank MDL and the greater of the two at each time (TASK 3), and asks you to choose an integration time (TASK 4) and report your 40 homes (TASK 5). Section 3 repeats everything with bracketing calibration blanks.
 
 The judgment cell is scored 0 to 2 by the rubric in the syllabus, in the format on the AI practices page. Part (a) asks which integration time and background treatment you would set for your lab, with the numbers from your output that support it and what the other treatment would have cost. Part (b) is one entry with a reason from your output; your prompt record from TASK 2 is its natural source. To submit, with your prompt record filled in, click **Restart**, then **Run All**, save, and upload `activity.ipynb` to Canvas by 1:30 pm on Thursday, October 29. A longer count lowers only the counting noise.
