@@ -40,7 +40,11 @@ Four files in the repository record how you worked. The final's Workflow criteri
 - `tasks/` holds one file per piece of work, each with dated progress entries, moved to `tasks/archive/` when it is done.
 - `judgment-log.md`, in the top folder, is the judgment log described below.
 
-Commit your data if they are under about 50 MB. Larger data stay out of the repository, listed in `.gitignore`, and a cell in your notebook downloads them from the source URL. GitHub refuses any file over 100 MB.
+Commit all of your data to the repository, in a `data/` folder, as you downloaded them. Your mentor runs your notebook from the commit you submit with downloads blocked, so the notebook reads its data from the committed files, never from the source URL. A notebook that tries to download fails that run, and a failed run scores at most 2 on the working draft's Data criterion and on the final's Reproducibility criterion, because running from a clean start is one of their elements. GitHub refuses a push with any file over 100 MB and warns about a file over 50 MB. The warning is not an error, and the push goes through. Every dataset on the [CHEM 427 project list](project-list.md) fits under the limit, and four of them push with the warning. If you expect your data to total more than 5 GB, talk to your mentor before you commit them.
+
+Raw files stay exactly as downloaded, and all cleaning happens in code. A value you correct, a row you drop, or a column you rename is a line in your notebook, never an edit to the file. For CHEM 427 projects your mentor compares each committed data file with the file the instructional team downloaded, so an edited file shows.
+
+If your data cannot be stored on GitHub, because they are too large or their license does not allow a copy to be shared, ask your mentor for an exemption, with your topic declaration or at any time up to Tuesday, December 1. Your mentor answers within two days. Once it is approved, commit `data/EXEMPT.md` with the reason, the date of the approval, and a copy of the notebook cell that downloads the data. Your notebook may then download them. A working draft scored before the exemption keeps its score.
 
 Each submitted milestone is the URL of one commit. A commit is a saved state of the whole repository, and its hash, a string of 40 letters and digits, names it. Push the commit first. Then open your repository on GitHub, click **Commits**, click the message of the commit you want read, and copy the address from your browser, which ends in `/commit/` and the hash. Submit that URL on Canvas. Your mentor clones your repository and reads it at that commit, so a commit pushed after your Canvas entry is not read. The time of the Canvas entry is the submission time for the deadline and the late rule.
 
@@ -164,7 +168,7 @@ The bracketed parts are filled in from your notebook.
 
 ## 4. Final submission
 
-Submit the URL of a pushed commit that holds the notebook, the data or a cell that downloads them, `judgment-log.md`, the visual summary as a PDF, `AGENTS.md`, your skill, and `tasks/`. There is no zip file.
+Submit the URL of a pushed commit that holds the notebook, your data as downloaded (or `data/EXEMPT.md`, if your mentor approved an exemption), `judgment-log.md`, the visual summary as a PDF, `AGENTS.md`, your skill, and `tasks/`. There is no zip file.
 
 The notebook runs from a clean start in the course environment, which your repository's copies of `pyproject.toml`, `uv.lock` and `.python-version` rebuild. Its first markdown cell states the question, the data source with URL and access date, and a data and code availability statement; its last markdown cell states the result with its uncertainty and what it means for the question. Any random step uses a fixed seed. Anything in the course `pyproject.toml` may be used.
 
@@ -174,7 +178,7 @@ The final submission is scored on seven criteria, 0 to 35 in all.
 
 | Criterion | Elements | For a 5 |
 |---|---|---|
-| Reproducibility | Runs from a clean start with relative paths; data included or downloaded by a cell; seeds fixed; availability statement in the first cell | States what a reader would need that the notebook cannot supply |
+| Reproducibility | Runs from a clean start with relative paths; data committed as downloaded, or an approved `data/EXEMPT.md`; seeds fixed; availability statement in the first cell | States what a reader would need that the notebook cannot supply |
 | Question and data | The question in one sentence; source with URL and access date; units and what a row represents; what was removed and why | States what these data cannot answer |
 | Method | The method; the property of the data that chose it; an assumption checked, with the result of the check | Compares it with a named alternative on your data, with a number |
 | Result | The main result with units and uncertainty; interpreted against the chemistry (magnitude, expected range); limits stated | Checks the result against an independent value: a literature value, a second method or a hand calculation |

@@ -23,6 +23,8 @@ Each project goes to one student. Rank your three preferred projects on the Canv
 
 The course methods column names the sessions whose methods the question needs. Session 4, on file formats, is needed by every project.
 
+The download column gives the size as downloaded, and every dataset fits in your project repository, where the [final project page](final-project.md) asks you to commit it. No file on the list is over GitHub's 100 MB limit. Projects 2, 4, 5, and 11 each have a file between 50 and 100 MB, which pushes with a warning from GitHub that is not an error, and their loading notes name the file.
+
 ## 1. Retention time from molecular structure
 
 **Question.** A Ridge or PLS model built on 10 to 20 molecular descriptors predicts reversed-phase retention time on one C18 method; after a straight-line recalibration, how much of that accuracy survives a change of organic modifier and gradient, and how does that compare with changing only the column?
@@ -41,7 +43,7 @@ The course methods column names the sessions whose methods the question needs. S
 
 **Data.** The Knoevenagel example set of [MOCCA, an open-source chromatography package](https://github.com/bayer-group/MOCCA) (branch `example-data`, file `knoevenagel.tar.bz2`). It holds standards of benzaldehyde, 4-methoxybenzaldehyde and 4-(dimethylamino)benzaldehyde at 4 concentrations, run on 5 gradient lengths from 0.5 to 2.5 minutes in two replicate series, with blanks for each. Each run is a matrix of absorbance in mAU against time and wavelength, 200 to 550 nm. Haas, C. P. et al., *ACS Cent. Sci.* **9**, 307 (2023), doi:10.1021/acscentsci.2c01042. License MIT.
 
-**What you meet on loading.** The archive unpacks to about 1 GB, so extract only the calibration and blank runs. The CSV files are UTF-16 text, which a default `read_csv` call cannot read. The concentrations are not in the file names, which carry only a nominal code; the weighed concentrations are in the package's loader source, `src/mocca2/example_data/loaders.py`. The time axes differ slightly between runs, and the blank baseline drifts with the gradient.
+**What you meet on loading.** The 53 MB archive unpacks to about 1 GB. You may commit the archive itself, which pushes with GitHub's warning, and read the runs from inside it with Python's `tarfile` module. Or extract only the calibration and blank runs and commit those, 554 MB in files of under 7 MB each. The CSV files are UTF-16 text, which a default `read_csv` call cannot read. The concentrations are not in the file names, which carry only a nominal code; the weighed concentrations are in the package's loader source, `src/mocca2/example_data/loaders.py`. The time axes differ slightly between runs, and the blank baseline drifts with the gradient.
 
 **A first analysis for the draft.** For one analyte on one gradient: subtract the blank, integrate the peak, and fit a calibration line with the uncertainty on its slope.
 
@@ -65,7 +67,7 @@ The course methods column names the sessions whose methods the question needs. S
 
 **Data.** [Raman_Sugars](https://github.com/Alvaro-FG/Raman_Sugars), Raman spectra of 245 aqueous mixtures of sucrose, fructose, maltose and glucose at 0 to 0.32 mol/L each, excited at 785 nm, 142 to 3685 cm⁻¹ in raw counts. Each mixture has 8 spectra at 5 s and 32 at 0.5 s. Fernandez Galiana, A., Raman_Sugars, GitHub repository, commit 2f68c20 (2024). License MIT. There is no paper, so cite the repository and the commit.
 
-**What you meet on loading.** Each file has one column per spectrum, and the columns are not in the order of the metadata table. The metadata give each sugar as a volume of 1 M stock in µL, which you convert to concentration. Cosmic rays leave single-pixel spikes. The detector is weak above about 2500 cm⁻¹.
+**What you meet on loading.** Each file has one column per spectrum, and the columns are not in the order of the metadata table. The metadata give each sugar as a volume of 1 M stock in µL, which you convert to concentration. Cosmic rays leave single-pixel spikes. The detector is weak above about 2500 cm⁻¹. The file of 0.5 s spectra, `Sugar_Concentration_Test_Fast_ALL_spectra.csv` at 94.5 MB, pushes with GitHub's warning.
 
 **A first analysis for the draft.** A PLS model for one sugar on the 5 s spectra, with its cross-validated error in mmol/L, where all the spectra of one mixture stay in the same fold.
 
@@ -77,7 +79,7 @@ The course methods column names the sessions whose methods the question needs. S
 
 **Data.** A [near-infrared hyperspectral image of a mock-up after Botticelli](https://zenodo.org/records/8143550): 384 × 410 pixels, 288 bands from 896 to 2502 nm, raw detector counts, with white and dark reference images for converting to reflectance. The panel is egg tempera on a gypsum ground, and dammar varnish covers part of the surface. Rocha de Oliveira, R., Malegori, C., Sciutto, G., Oliveri, P., *Chemom. Intell. Lab. Syst.* **240**, 104918 (2023), doi:10.1016/j.chemolab.2023.104918. License CC BY 4.0.
 
-**What you meet on loading.** Each image is an ENVI pair: a text header that gives the dimensions, byte order, band interleave and wavelengths, and a binary file of 16-bit integers that `np.fromfile` reads once you know the layout. Reflectance is the sample minus the dark reference, divided by the white minus the dark. The first bands carry almost no light. The image includes the scan stage, bare wood and a gypsum strip besides the painting. No file says which part is varnished.
+**What you meet on loading.** Each image is an ENVI pair: a text header that gives the dimensions, byte order, band interleave and wavelengths, and a binary file of 16-bit integers that `np.fromfile` reads once you know the layout. Reflectance is the sample minus the dark reference, divided by the white minus the dark. The first bands carry almost no light. The image includes the scan stage, bare wood and a gypsum strip besides the painting. No file says which part is varnished. The painting's binary file, `venere.raw` at 90.7 MB, pushes with GitHub's warning.
 
 **A first analysis for the draft.** Calibrate to reflectance, report the noise in each band from the dark frames, and make a PCA score image of the painted area.
 
@@ -149,7 +151,7 @@ The course methods column names the sessions whose methods the question needs. S
 
 **Data.** The image database of the nPSize reference-material project on Zenodo: 95 [AFM height maps](https://zenodo.org/records/5578927) of 512 × 512 pixels in nm at 5.87 nm per pixel, 40 [SEM images](https://zenodo.org/records/5578878) at 1.4 to 1.9 nm per pixel, 11,227 [expert-annotated particles](https://zenodo.org/records/5577401), [SAXS curves](https://zenodo.org/records/5886834) and the [validation report](https://zenodo.org/records/7016466) with the reference sizes. pollen-metrology.com, nPSize image and annotation records, Zenodo (2021), doi:10.5281/zenodo.5578927, doi:10.5281/zenodo.5578878 and doi:10.5281/zenodo.5577401; Deumer, J., Gollwitzer, C., Zenodo (2022), doi:10.5281/zenodo.5886834; Bartczak, D., Hodoroaba, V.-D., Zenodo (2022), doi:10.5281/zenodo.7016466. Licenses CC0 for the images and annotations, CC BY 4.0 for the SAXS data and the report.
 
-**What you meet on loading.** The maps are `.h5` files, but each holds one uncompressed array after a 2048 byte header, which numpy reads directly. The material and pixel size of each image are only in the annotation file and the file names. The report's section 2 text swaps the labels of the silica materials nPSize12 to 14. Its Table 1 and Tables 12 and 13 agree with the annotated sizes: 12 and 13 are bimodal, 14 has one mode. Start with nPSize01 (gold) and nPSize10 (silica); the bimodal silica nPSize12, with 4 AFM maps, is an extension. The SEM images carry a data bar that has to be cropped.
+**What you meet on loading.** The maps are `.h5` files, but each holds one uncompressed array after a 2048 byte header, which numpy reads directly. The material and pixel size of each image are only in the annotation file and the file names. The report's section 2 text swaps the labels of the silica materials nPSize12 to 14. Its Table 1 and Tables 12 and 13 agree with the annotated sizes: 12 and 13 are bimodal, 14 has one mode. Start with nPSize01 (gold) and nPSize10 (silica); the bimodal silica nPSize12, with 4 AFM maps, is an extension. The SEM images carry a data bar that has to be cropped. You may commit the three zips and read the files from inside them with Python's `zipfile` module, or unpack them and commit the 420 MB of files. Either way one file pushes with GitHub's warning: `LNE1.zip`, 69 MB, or once unpacked `annotations.json`, 94.5 MB.
 
 **A first analysis for the draft.** Segment the particles in the AFM maps of one material, take each particle's maximum height, and report the median size with a bootstrap confidence interval.
 
