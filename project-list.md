@@ -17,11 +17,12 @@ Each project goes to one student. Rank your three preferred projects on the Canv
 | 7 | Counting carbons from isotope patterns | High-resolution mass spectrometry | Sessions 9, 12, 13, 14 | 13 MB |
 | 8 | Other vegetable oils in olive oil | ¹H NMR spectroscopy | Sessions 12, 13, 17, 18 | 4 MB |
 | 9 | Perovskite nanocrystal synthesis read by absorbance | UV-Vis spectroscopy | Sessions 12, 13, 15, 18 | 3 MB |
-| 10 | Phase transitions of potassium niobate | Powder X-ray diffraction | Sessions 12, 13, 14 | 1 MB |
 | 11 | Nanoparticle size by three techniques | Atomic force and electron microscopy, SAXS | Sessions 9, 11, 12, 13, 14 | 95 MB |
 | 12 | Hydrogen on platinum | Cyclic voltammetry | Sessions 9, 11, 12, 13, 14 | 17 MB |
 
 The course methods column names the sessions whose methods the question needs. Session 4, on file formats, is needed by every project.
+
+Project 10, phase transitions of potassium niobate by powder X-ray diffraction, was withdrawn on Wednesday, October 21. The instructional team is building the worked example of a finished project on its data, which the [final project page](final-project.md) links from November 3. The other projects keep their numbers. If you ranked project 10 on the survey, submit the survey again with another choice.
 
 The download column gives the size as downloaded, and every dataset fits in your project repository, where the [final project page](final-project.md) asks you to commit it. No file on the list is over GitHub's 100 MB limit. Projects 2, 4, 5, and 11 each have a file between 50 and 100 MB, which pushes with a warning from GitHub that is not an error, and their loading notes name the file.
 
@@ -132,18 +133,6 @@ The download column gives the size as downloaded, and every dataset fits in your
 **A first analysis for the draft.** Find the absorption peak positions of the nearly pure samples of each product and convert them to energies in eV.
 
 **Chemical context.** Lead bromide perovskites form three-dimensional CsPbBr₃ nanocrystals and also two-dimensional nanoplatelets that are n layers of PbBr₆ octahedra thick. Confinement in the thin dimension moves each platelet's sharp exciton absorption to higher energy as n falls, so the absorption spectrum reads out which products a synthesis made. Which product forms depends on the ratio of cesium, lead and bromide and on the balance of oleylamine and oleic acid ligands.
-
-## 10. Phase transitions of potassium niobate
-
-**Question.** At what temperatures, with uncertainty, do the two structural phase transitions of KNbO₃ occur on heating and on cooling, is the hysteresis between them larger than the uncertainty in temperature, and how does the thermal expansion change across each transition?
-
-**Data.** [Thermal evolution of the crystal structure of KNbO₃](https://doi.org/10.5061/dryad.td26kr2): 103 laboratory powder patterns with Cu Kα radiation from 19° to 60° 2θ in counts, on heating from 30 to 650 °C and cooling back in 10 °C steps, with the authors' refined lattice parameters and a furnace temperature calibration. Skjærvø, S. L. et al., Dryad (2018), doi:10.5061/dryad.td26kr2; article in *R. Soc. Open Sci.* **5**, 180368 (2018), doi:10.1098/rsos.180368. License CC0.
-
-**What you meet on loading.** The patterns are in Bruker's binary RAW format, version 1.01, which no course library reads: the file opens with the text `RAW1.01`, a 712 byte file header follows, and each scan range has a 304 byte header, then a supplementary header whose length the range header states, then its counts as 32-bit floats, so you write a reader with Python's `struct` module. The furnace setpoint is not the sample temperature; a calibration in an Excel workbook, which `pd.read_excel` reads, converts one to the other. Some cooling setpoints are off the 10 °C grid.
-
-**A first analysis for the draft.** Track the splitting of one reflection near 45° 2θ through the heating series and locate the two transitions.
-
-**Chemical context.** KNbO₃ is a perovskite oxide that is orthorhombic at room temperature, tetragonal at intermediate temperature and cubic at high temperature. Below the cubic phase it is ferroelectric because Nb⁵⁺ sits off the centre of its NbO₆ octahedron, and the splitting of reflections that are single in the cubic phase measures that distortion. Both transitions are first order, which is why they occur at different temperatures on heating and on cooling. Each reflection is a Kα₁ and Kα₂ doublet, which a peak fit has to include.
 
 ## 11. Nanoparticle size by three techniques
 
