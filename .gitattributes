@@ -5,3 +5,7 @@ sessions/S06-batch-reporting/data/flarelab/** -text
 
 # Session 8: the Zenodo count trace kept byte for byte as published (CRLF endings)
 sessions/S08-noise/data/ag_trace_1ms.csv -text
+
+# Session 10: the BMRB FID and its parameter file kept byte for byte as published (binary; LF endings)
+sessions/S10-fourier/data/fid -text
+sessions/S10-fourier/data/acqus -text

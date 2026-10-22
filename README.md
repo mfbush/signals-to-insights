@@ -53,7 +53,7 @@ The dates on this page, the topics of sessions 1 to 3 and the grading weights ar
 | 8 | Tue Oct 27 | Noise in chemical measurements: can this lead result be reported as a number? |
 | 9 | Thu Oct 29 | Experimental design and statistical inference: did Flint's water exceed the lead action level? |
 | none | Sun Nov 1 | CHEM 427 project preferences due |
-| 10 | Tue Nov 3 | Fourier analysis: is the microscope's scale calibrated? |
+| 10 | Tue Nov 3 | Fourier analysis: how long must the spectrometer listen? |
 | 11 | Thu Nov 5 | Filtering, smoothing, baseline correction: is this impurity above the reporting threshold? |
 | none | Sun Nov 8 | Project topic declaration due |
 | 12 | Tue Nov 10 | Peak detection and feature extraction: must this impurity be identified? |
