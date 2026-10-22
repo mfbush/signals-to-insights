@@ -52,7 +52,7 @@ Within a session activity, use what the course has introduced by that session, s
 | 8 | `numpy.random` with a seed (`default_rng`, `rng.poisson`); a regulatory constant such as Student's t from a table given in Parameters, not computed; `reshape(n, k).sum(axis=1)` to sum a trace into windows; pandas `.unique()`, `.to_numpy()`, `set_index`, `to_string(index=False)`; `ax.set_yscale("log")`, `ax.axhline`, `ax.set_ylim`. S8 uses no `scipy.signal`; its filters come in session 11 |
 | 9 | `pandas.read_excel(sheet_name=)`, `pd.to_numeric(errors="coerce")`, `.isin`, `.nunique()`, `.rename(columns=)`, `.reset_index(drop=True)`; `np.where` and `np.median`; `np.sort` and reading a value by its rank (rank r is index r - 1); `np.percentile` and its `method=`, named in the notes; `scipy.stats.binom` (`.ppf`, `.cdf`) for the rank of a lower bound on a percentile; `scipy.stats.ttest_rel` and `ttest_ind`, their `.pvalue` and `.confidence_interval()`; `assert` to stop on an empty selection; `%run` for a session's fetch script; `ax.axvline`. ANOVA is not used |
 | 10 | `numpy.fft` |
-| 11 | `scipy.signal` filters (Savitzky-Golay, Butterworth), `scipy.ndimage` |
+| 11 | `scipy.signal.savgol_filter`; `np.polyfit` and `np.polyval` for a baseline; boolean masks with `np.abs` and `&`; `.sum() * dt` for an area |
 | 12 | `scipy.signal.find_peaks`, `scipy.integrate.trapezoid` |
 | 13 | `scipy.optimize.curve_fit` |
 | 14 | Monte Carlo error propagation with `numpy.random` |
