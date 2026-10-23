@@ -16,7 +16,7 @@ By the end of this session you can:
 
 ## 1. The reporting threshold and the batch record
 
-An **impurity** in a drug substance is any component other than the active molecule, and a batch record lists each one the method found, as a percentage of the main peak's area. The [ICH Q3A(R2) guideline](https://database.ich.org/sites/default/files/Q3A%28R2%29%20Guideline.pdf) sets three thresholds for a substance whose maximum daily dose is 2 g or less: a peak at or above 0.05% is reported, at or above 0.10% it must be identified, and at or above 0.15% its safety must be qualified. Session 12 takes the identification threshold; today's decision is the reporting one.
+An **impurity** in a drug substance is any component other than the active molecule, and a batch record lists each one the method found, as a percentage of the main peak's area. The [ICH Q3A(R2) guideline](https://database.ich.org/sites/default/files/Q3A%28R2%29%20Guideline.pdf) sets three thresholds for a substance whose maximum daily dose is 2 g or less: a peak at or above 0.05% is reported, at or above 0.10% it must be identified, and at or above 0.15% its safety must be qualified. Today's decision is the reporting one.
 
 The cost runs both ways. An impurity growing from batch to batch is caught by the trend in the batch records, and a peak left out at 0.05% leaves no trend to read. A stretch of baseline reported as an impurity sends a batch into an investigation for nothing.
 
@@ -60,4 +60,4 @@ Your record is `record_NN`, your student number from session 4, one column of `d
 
 The judgment cell is scored 0 to 2 by the rubric in the syllabus. Part (a) asks which peaks go into the batch record and at what percent, with the numbers the notebook names. Part (b) is one entry with a reason from your output, and your prompt record is its natural source. To submit, click **Restart**, then **Run All**, save, and upload `activity.ipynb` to Canvas by 1:30 pm on Tuesday, November 10.
 
-The area percent you report today depends on where the baseline was drawn. Session 12 asks the next question of the same table, where each peak starts and ends, against the 0.10% identification threshold.
+The area percent you report today depends on where the baseline was drawn. Session 12 asks where each peak starts and ends, on a gas chromatogram of lavender oil read against the pharmacopoeia.
