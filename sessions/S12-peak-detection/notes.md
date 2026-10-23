@@ -1,6 +1,6 @@
 # Session 12: Peak detection and feature extraction
 
-Tuesday, November 10. A quality analyst at a supplier or a pharmacy decides whether a commercial lavender oil meets the European Pharmacopoeia's profile, read as the area percent of three peaks in a gas chromatogram: camphor at most 1.2%, linalool 20.0 to 45.0%, and linalyl acetate 25.0 to 47.0%. Each percentage depends on which peaks are counted and where each starts and ends. Today you choose those settings on three runs of one oil from a [published dataset of 55 commercial oils](https://doi.org/10.17632/pgkrc7wyj4.1), and find whether your oil's call depends on them.
+Tuesday, November 10. A quality analyst at a supplier or a pharmacy decides whether a commercial lavender oil meets three of the ten limits in the European Pharmacopoeia's profile, read as area percent in a gas chromatogram: camphor at most 1.2%, linalool 20.0 to 45.0%, and linalyl acetate 25.0 to 47.0%. Each percentage depends on which peaks are counted and where each starts and ends. Today you choose those settings on three runs of one oil from a [published dataset of 55 commercial oils](https://doi.org/10.17632/pgkrc7wyj4.1), and find whether your oil's call depends on them.
 
 ## Learning objectives
 
@@ -16,7 +16,7 @@ By the end of this session you can:
 
 ## 1. Area percent and the pharmacopoeia's profile
 
-The [European Pharmacopoeia monograph on lavender oil](https://www.drugfuture.com/Pharmacopoeia/EP7/DATA/1338E.PDF) (Ph. Eur. 1338) reads a gas chromatogram with flame ionization detection (GC-FID) by **normalization**: each peak's area as a percentage of the summed area of all peaks, its **area percent**. A peak under 0.05% of that sum falls below the **disregard limit** and is left out of it.
+The [European Pharmacopoeia monograph on lavender oil](https://www.drugfuture.com/Pharmacopoeia/EP7/DATA/1338E.PDF) (Ph. Eur. 1338) reads a gas chromatogram with flame ionization detection (GC-FID) by **normalization**: each peak's area as a percentage of the summed area of all peaks, its **area percent**. A peak under 0.05% of that sum falls below the **disregard limit** and is left out of it. The monograph sets it with a reference solution at 0.05%; these runs have none, so here it is 0.05% of the total.
 
 [Linalool](https://pubchem.ncbi.nlm.nih.gov/compound/Linalool) and [linalyl acetate](https://pubchem.ncbi.nlm.nih.gov/compound/Linalyl-acetate) are true lavender oil's two largest peaks, at 42.88 and 43.29 min, and [camphor](https://pubchem.ncbi.nlm.nih.gov/compound/Camphor) is a small peak at 40.37 min. The files name no peak, so the three were placed by the monograph's elution order, and camphor was confirmed by its mass spectrum (<i>m</i>/<i>z</i> 152, 108, 95 and 81) in one oil.
 
@@ -51,9 +51,9 @@ A peak's **bounds** are the lowest points of the signal between its apex and eac
 - The **drop-line** rule draws one baseline through the bounds that sit on the true baseline, within 0.05 mV of the lowest signal 0.3 min either side, and splits a cluster by a vertical line at each valley.
 - The **valley-skim** rule draws a straight line under each peak between its own two bounds, so the area under a shared valley belongs to neither peak.
 
-The worked calculation continues, by drop-line at the derived setting. Linalool's area is 10.59 mV min and the 53 kept peaks total 30.81 mV min, so linalool is 10.59 / 30.81 × 100 = 34.37%, its area over the kept total, as a percent. The data system gives 35.16%, 0.80 points higher, because its 38 peaks make a smaller total. By valley skim it reads 34.49%: the rules agree wherever the signal returns to the baseline, as it nearly always does in Dataset A. An area percent is complete only with the list of peaks its total includes.
+The worked calculation continues, by drop-line at the derived setting. Linalool's area is 10.59 mV min and the 53 kept peaks total 30.81 mV min, so linalool is 10.59 / 30.81 × 100 = 34.37%, its area over the kept total, as a percent. The data system gives 35.16%, 0.80 points higher. By valley skim it reads 34.49%: the rules agree wherever the signal returns to the baseline, as it nearly always does in Dataset A. An area percent is complete only with the list of peaks its total includes.
 
-Figure 2 shows where they part, on run A of the solution's oil, which no student holds. Two peaks share a valley at 16.3 mV, far above the baseline near 1.1 mV, and the drop-line gives them 1.81 and 1.88 mV min. Each skim line rises from an outer bound to the valley across the peak's outer flank, where it runs above the signal and the skim subtracts the area between them. Both skim areas are negative, −1.02 and −2.28 mV min, one more reason a valley that does not return to the baseline calls for the drop-line. The skim also shrinks the run's total from 22.24 to 18.54 mV min, and linalool rises from 19.16 to 22.97%, across the 20.0% limit.
+Figure 2 shows where they part, on run A of the solution's oil, which no student holds. Two peaks share a valley at 16.3 mV, far above the baseline near 1.1 mV, and the drop-line gives them 1.81 and 1.88 mV min. Each skim line rises from an outer bound to the valley across the peak's outer flank, where it runs above the signal and the skim subtracts the area between them. Both skim areas are negative, −1.02 and −2.28 mV min, so both fall under the disregard limit and the doublet leaves the total, one more reason a valley that does not return to the baseline calls for the drop-line. The total shrinks from 22.24 to 18.54 mV min, and linalool rises from 19.16 to 22.97%, across the 20.0% limit, with its own area the same by both rules.
 
 ![A doublet in one GC-FID run, peaks 22.9 and 26.1 mV at 59.45 and 59.55 min, valley 16.3 mV. A dashed drop-line baseline runs flat near 1 mV; dotted skim lines rise from 59.12 and 60.04 min to the valley, above both outer flanks.](figures/valley.png)
 
@@ -63,15 +63,15 @@ Section 4 sets how far from a limit a value must sit for its call to hold.
 
 ## 4. Replicate runs and the margin to a limit
 
-A component's mean over runs A, B and C is the result, and their standard deviation is the **replicate spread**. The **margin** is the distance from the mean to the nearest limit, in percentage points. A margin many times the spread holds; one smaller than the spread could reverse with the next run, and the report says so.
+The mean over runs A, B and C is the result, and their standard deviation the **replicate spread**. The **margin** is the distance from the mean to the nearest limit, in percentage points. A margin many times the spread holds; one smaller than the spread could reverse with the next run.
 
 A call depends on the rule only where the rule's shift exceeds the margin. In Dataset A, linalool sits 10.63 points from its nearest limit, 45.0%, against a shift of 0.12 points, and camphor 0.95 points under 1.2%, so Dataset A meets all three limits under either rule. The data system's value comes from a different list of peaks, so quote it beside yours, not in its place.
 
 ## 5. A SKILL.md for a repeated step
 
-A **skill** is a file of instructions, `SKILL.md`, in a folder under `.claude/skills/`, that Claude Code runs as a command when you type `/` and its name ([Claude Code skills](https://code.claude.com/docs/en/skills)), for a step you repeat. Its header gives the `name` and a `description` of when to use it; the body is the method, with `$ARGUMENTS` standing for what you type after the command, here a run's path.
+A **skill** is a file of instructions, `SKILL.md`, in a folder under `.claude/skills/`, that Claude Code runs as a command when you type `/` and its name ([Claude Code skills](https://code.claude.com/docs/en/skills)). Its header gives the `name` and a `description` of when to use it; the body is the method, with `$ARGUMENTS` standing for what you type after the command, here a run's path.
 
-The body states every choice of section 1 as a number, from the stretch searched to each component's time and range. The template gives every window in points, because a looser wording is read one way by the assistant and another by your code. In the course's trials, "no bound more than 0.5 min from its apex" gave tables 0.02 to 0.07 points from the hand-built one, and a skill that stated no baseline chose a flat line at the run's minimum and read Dataset A's linalool at 30.75%.
+The body states every choice of section 1 as a number, from the stretch searched to each component's time and range. The template gives every window in points, because a looser wording is read one way by the assistant and another by your code. In the course's trials, run before these notes existed, "no bound more than 0.5 min from its apex" gave tables 0.02 to 0.07 points from the hand-built one, and a skill that stated no baseline chose a flat line at the run's minimum and read Dataset A's linalool at 30.75%.
 
 The check is to run the skill once on data whose answer you know. A skill that follows the method reproduces Dataset A's hand-built table within 0.01 points, the last digit of a rounding. A larger difference points at a step in `SKILL.md` to change before the skill reads your runs, and TASK 3's table is the second check. That order, a known answer first and new data second, holds for any skill you write.
 
@@ -79,6 +79,6 @@ The check is to run the skill once on data whose answer you know. A skill that f
 
 Your oil is beside your student number from session 4 in `data/samples.csv`. Section 2 asks for `SAMPLE` (TASK 1), your settings (TASK 2), the skill's runs and your own table in a code cell you add (TASK 3); section 3 compares the rules.
 
-The judgment cell is scored 0 to 2 by the rubric in the syllabus. Part (a) asks whether your oil meets the profile, citing each component's mean and spread, its margin, the other rule's shift and the data system's value. Part (b) is one entry with a reason from your output; your prompt record is its natural source. To submit, click **Restart**, then **Run All**, save, and upload `activity.ipynb` to Canvas by 1:30 pm on Thursday, November 12.
+The judgment cell is scored 0 to 2 by the rubric in the syllabus: part (a) is your oil's call with its evidence, part (b) one entry with a reason from your output. To submit, click **Restart**, then **Run All**, save, and upload `activity.ipynb` to Canvas by 1:30 pm on Thursday, November 12.
 
 Your call rests on three distances read together: the margin, the spread and the rule's shift. A drop-line splits a doublet by a vertical line at its valley; session 13's `curve_fit` offers the alternative, a peak shape fitted to each.
