@@ -53,7 +53,7 @@ Within a session activity, use what the course has introduced by that session, s
 | 9 | `pandas.read_excel(sheet_name=)`, `pd.to_numeric(errors="coerce")`, `.isin`, `.nunique()`, `.rename(columns=)`, `.reset_index(drop=True)`; `np.where` and `np.median`; `np.sort` and reading a value by its rank (rank r is index r - 1); `np.percentile` and its `method=`, named in the notes; `scipy.stats.binom` (`.ppf`, `.cdf`) for the rank of a lower bound on a percentile; `scipy.stats.ttest_rel` and `ttest_ind`, their `.pvalue` and `.confidence_interval()`; `assert` to stop on an empty selection; `%run` for a session's fetch script; `ax.axvline`. ANOVA is not used |
 | 10 | `numpy.fft` |
 | 11 | `scipy.signal.savgol_filter`; `np.polyfit` and `np.polyval` for a baseline; boolean masks with `np.abs` and `&`; `.sum() * dt` for an area |
-| 12 | `scipy.signal.find_peaks`, `scipy.integrate.trapezoid` |
+| 12 | `scipy.signal.find_peaks` with `prominence`, `width` and `distance`, and `peak_widths`; `scipy.integrate.trapezoid`; `scipy.io.netcdf_file` to read a chromatogram in the AIA netCDF format |
 | 13 | `scipy.optimize.curve_fit` |
 | 14 | Monte Carlo error propagation with `numpy.random` |
 | 15 | `sklearn.decomposition.PCA`, `sklearn.preprocessing.StandardScaler` |
