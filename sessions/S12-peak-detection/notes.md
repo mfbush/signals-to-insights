@@ -12,7 +12,7 @@ By the end of this session you can:
 4. Show how far a second integration rule moves each result. Say whether the call depends on the rule.
 5. Write a skill for a step you repeat. Check its table against one you built by hand, and decide whether to change the skill before using it on new data.
 
-**AI practice.** *A SKILL.md for a repeated step*, new today. After section 1 you save its method as a skill from a template with four blanks and run it on Dataset A in a new conversation. You decide whether its values match your hand-built table within 0.01 points, and if not, what in `SKILL.md` to change, then run it on your runs beside TASK 3's table. A three-line prompt record holds your prompt, both comparisons, and what you changed or verified, and the execution point needs it.
+**AI practice.** *A SKILL.md for a repeated step*, new today. After section 1 you save its method as a skill from a template with four blanks and run it on Dataset A in a new conversation. You decide whether its values match your hand-built table within 0.01 points, and if not, what in `SKILL.md` to change, then run it on your runs. A three-line prompt record holds your prompt, both comparisons, and what you changed or verified, and the execution point needs it.
 
 ## 1. Area percent and the pharmacopoeia's profile
 
@@ -73,11 +73,11 @@ A **skill** is a file of instructions, `SKILL.md`, in a folder under `.claude/sk
 
 The body states every choice of section 1 as a number, from the stretch searched to each component's time and range. The template gives every window in points, because a looser wording is read one way by the assistant and another by your code. In the course's trials, run before these notes existed, "no bound more than 0.5 min from its apex" gave tables 0.02 to 0.07 points from the hand-built one, and a skill that stated no baseline chose a flat line at the run's minimum and read Dataset A's linalool at 30.75%.
 
-The check is to run the skill once on data whose answer you know. A skill that follows the method reproduces Dataset A's hand-built table within 0.01 points, the last digit of a rounding. A larger difference points at a step in `SKILL.md` to change before the skill reads your runs, and TASK 3's table is the second check. That order, a known answer first and new data second, holds for any skill you write.
+The check is to run the skill once on data whose answer you know. A skill that follows the method reproduces Dataset A's hand-built table within 0.01 points, the last digit of a rounding. A match counts only if the skill's own text made it: read the report's parameter line and anything it took from outside `SKILL.md`, such as these notes, and write that step into the file. A larger difference points at a step in `SKILL.md` to change before the skill reads your runs, and TASK 3's table is the second check. That order, a known answer first and new data second, holds for any skill you write.
 
 ## 6. Today
 
-Your oil is beside your student number from session 4 in `data/samples.csv`. Section 2 asks for `SAMPLE` (TASK 1), your settings (TASK 2), the skill's runs and your own table in a code cell you add (TASK 3); section 3 compares the rules.
+Your oil is beside your student number from session 4 in `data/samples.csv`.
 
 The judgment cell is scored 0 to 2 by the rubric in the syllabus: part (a) is your oil's call with its evidence, part (b) one entry with a reason from your output. To submit, click **Restart**, then **Run All**, save, and upload `activity.ipynb` to Canvas by 1:30 pm on Thursday, November 12.
 
