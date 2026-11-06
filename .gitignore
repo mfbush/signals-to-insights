@@ -14,6 +14,11 @@ sessions/S04-chemical-data-formats/data/*-IR.jdx
 # Session 9: the Flint lead results each student downloads with data/fetch_flint.py (no licence stated)
 sessions/S09-inference/data/*.xlsx
 
+# Session 14: the EPA collocation sets each student downloads with data/fetch_barkjohn.py (PurpleAir readings, not redistributed)
+sessions/S14-model-selection/data/*.zip
+sessions/S14-model-selection/data/Data_DevelopmentUSPAcorrection_210408/
+sessions/S14-model-selection/data/Dataset_PurpleAirSmoke_Barkjohn_1_18_23/
+
 # A student's own Claude Code files (the practice ladder in ai-practices.md), kept out of the course repository
 CLAUDE.local.md
 .claude/skills/

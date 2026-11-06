@@ -1,0 +1,31 @@
+student,sensor_1,sensor_2
+01,Cedar Rapids,Marysville
+02,Bend_S,Oakley_S
+03,Appleton,Bend_S
+04,Appleton,Tulelake_S
+05,Missoula_S,Oroville_S
+06,Atascadero,Wilmington
+07,Marysville,Missoula_S
+08,Oroville_S,Sarasota
+09,Boise_S,Happy Camp_S
+10,El Portal_S,Oakley_S
+11,Keeler_S,Wilmington
+12,El Portal_S,Topeka
+13,Marysville,RTP_S
+14,Atascadero,Decatur
+15,Forks of S._S,Phoenix
+16,Bend_S,Edmond
+17,Boise_S,Decatur
+18,Happy Camp_S,Oroville_S
+19,Keeler_S,Oakridge_S
+20,Edmond,Tulelake_S
+21,RTP_S,Tulelake_S
+22,Forks of S._S,RTP
+23,Forks of S._S,Missoula
+24,Boise_S,Phoenix
+25,Cedar Rapids,Hoopa_S
+26,Hoopa_S,Oakridge_S
+27,Keeler_S,RTP
+28,Hoopa_S,Missoula
+29,Atascadero,Denver
+30,Denver,El Portal_S
