@@ -59,7 +59,7 @@ The dates on this page, the topics of sessions 1 to 3 and the grading weights ar
 | 12 | Tue Nov 10 | Peak detection and feature extraction: does this lavender oil meet the pharmacopoeia? |
 | 13 | Thu Nov 12 | Curve fitting: does our size method pass the NIST standard? |
 | 14 | Tue Nov 17 | Uncertainty and model selection: does recess move indoors? |
-| 15 | Thu Nov 19 | Principal component analysis: is this puree the fruit on the label? |
+| 15 | Thu Nov 19 | Principal component analysis: which volcano did this obsidian come from? |
 | none | Sun Nov 22 | Project working draft and judgment log due |
 | 16 | Tue Nov 24 | Project work session 1, with oral check-ins |
 | none | Thu Nov 26 | Thanksgiving, no class |
