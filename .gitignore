@@ -19,6 +19,10 @@ sessions/S14-model-selection/data/*.zip
 sessions/S14-model-selection/data/Data_DevelopmentUSPAcorrection_210408/
 sessions/S14-model-selection/data/Dataset_PurpleAirSmoke_Barkjohn_1_18_23/
 
+# Session 17: the diesel spectra and properties each student downloads with data/fetch_diesel.py (no licence stated)
+sessions/S17-calibration/data/*.zip
+sessions/S17-calibration/data/diesel_*.csv
+
 # A student's own Claude Code files (the practice ladder in ai-practices.md), kept out of the course repository
 CLAUDE.local.md
 .claude/skills/
